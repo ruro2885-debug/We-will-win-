@@ -71,6 +71,24 @@ export const ROUTE_METADATA: Record<string, PageMeta> = {
     description: 'Register for a new Crestiqtrades account. Multi-asset market execution and algorithmic analysis.',
     canonicalPath: '/register',
   },
+  '/dashboard': {
+    title: 'Client Trading Overview | Crestiqtrades Workspace',
+    description: 'Monitor live algorithmic execution telemetry, equity balances, and risk utilization.',
+    canonicalPath: '/dashboard',
+    noIndex: true,
+  },
+  '/portfolio': {
+    title: 'Portfolio Holdings & Allocation | Crestiqtrades',
+    description: 'Multi-asset mark-to-market positions, portfolio beta, and risk factor breakdown.',
+    canonicalPath: '/portfolio',
+    noIndex: true,
+  },
+  '/wallet': {
+    title: 'Treasury & Settlement Gateway | Crestiqtrades',
+    description: 'Deposit digital assets or fiat wire capital, manage disbursements, and view transaction audits.',
+    canonicalPath: '/wallet',
+    noIndex: true,
+  },
   '/admin': {
     title: '404 - Page Not Found | Crestiqtrades',
     description: 'The requested resource could not be found.',

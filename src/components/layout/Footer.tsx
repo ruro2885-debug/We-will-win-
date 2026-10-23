@@ -1,6 +1,7 @@
 import React from 'react';
 import { CrestiqLogo } from '../brand/CrestiqLogo';
 import { ShieldAlert, Cookie, HelpCircle, Lock } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -8,8 +9,10 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings }) => {
+  const { user } = useAuth();
+
   return (
-    <footer className="bg-[#070A11] border-t border-[#1E293B] text-slate-400 text-sm">
+    <footer className="bg-[#07090C] border-t border-[#1C2430] text-[#A7B0BD] text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         {/* Main Grid Columns */}
@@ -20,28 +23,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
             <button
               type="button"
               onClick={() => onNavigate('/')}
-              className="focus:outline-none focus:ring-2 focus:ring-sky-500 rounded py-1"
+              className="focus:outline-none focus:ring-2 focus:ring-[#246BFD] rounded py-1"
             >
               <CrestiqLogo variant="horizontal" theme="dark" size="md" />
             </button>
-            <p className="mt-4 text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+            <p className="mt-4 text-xs text-[#A7B0BD] max-w-sm leading-relaxed">
               Crestiqtrades delivers institutional-grade AI market analytics, quantitative order execution, and copy trading infrastructure. Dedicated to disciplined capital parameters and predictive analytics.
             </p>
             
-            <div className="mt-6 flex flex-wrap items-center gap-2 text-xs font-medium text-slate-400">
-              <span className="px-2.5 py-1 rounded bg-[#111827] border border-[#1E293B] text-slate-300">
+            <div className="mt-6 flex flex-wrap items-center gap-2 text-xs font-semibold text-[#A7B0BD]">
+              <span className="px-2.5 py-1 rounded bg-[#11151B] border border-[#1C2430] text-white">
                 Established 2022
               </span>
-              <span className="px-2.5 py-1 rounded bg-[#111827] border border-[#1E293B] text-slate-300">
+              <span className="px-2.5 py-1 rounded bg-[#11151B] border border-[#1C2430] text-white">
                 Multi-Asset Coverage
               </span>
             </div>
           </div>
 
-          {/* Column 1: Platform */}
+          {/* Column 1: Platform & Workspace */}
           <div>
-            <h3 className="text-xs font-semibold tracking-wider text-slate-200 uppercase">Platform</h3>
-            <ul className="mt-4 space-y-2.5">
+            <h3 className="text-xs font-bold tracking-wider text-white uppercase">Platform</h3>
+            <ul className="mt-4 space-y-2.5 text-xs">
               <li>
                 <button
                   type="button"
@@ -72,10 +75,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
               <li>
                 <button
                   type="button"
-                  onClick={() => onNavigate('/')}
+                  onClick={() => onNavigate('/dashboard')}
+                  className="hover:text-white transition-colors text-left font-medium text-[#4A8DFF]"
+                >
+                  Client Dashboard
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => onNavigate('/portfolio')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Platform Features
+                  Portfolio Holdings
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => onNavigate('/wallet')}
+                  className="hover:text-white transition-colors text-left"
+                >
+                  Treasury &amp; Funding
                 </button>
               </li>
             </ul>
@@ -83,8 +104,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
 
           {/* Column 2: Company & Support */}
           <div>
-            <h3 className="text-xs font-semibold tracking-wider text-slate-200 uppercase">Company</h3>
-            <ul className="mt-4 space-y-2.5">
+            <h3 className="text-xs font-bold tracking-wider text-white uppercase">Company</h3>
+            <ul className="mt-4 space-y-2.5 text-xs">
               <li>
                 <button
                   type="button"
@@ -117,8 +138,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
 
           {/* Column 3: Legal & Governance */}
           <div>
-            <h3 className="text-xs font-semibold tracking-wider text-slate-200 uppercase">Legal</h3>
-            <ul className="mt-4 space-y-2.5">
+            <h3 className="text-xs font-bold tracking-wider text-white uppercase">Legal</h3>
+            <ul className="mt-4 space-y-2.5 text-xs">
               <li>
                 <button
                   type="button"
@@ -141,7 +162,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
                 <button
                   type="button"
                   onClick={() => onNavigate('/risk-disclosure')}
-                  className="hover:text-white transition-colors text-left text-amber-400/90 hover:text-amber-300"
+                  className="hover:text-white transition-colors text-left text-[#F5A623] hover:underline"
                 >
                   Risk Disclosure
                 </button>
@@ -159,7 +180,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
                 <button
                   type="button"
                   onClick={onOpenCookieSettings}
-                  className="inline-flex items-center gap-1.5 text-sky-400 hover:text-sky-300 transition-colors text-left text-xs font-medium"
+                  className="inline-flex items-center gap-1.5 text-[#4A8DFF] hover:underline transition-colors text-left text-xs font-semibold"
                 >
                   <Cookie className="w-3.5 h-3.5" />
                   Cookie Preferences
@@ -170,15 +191,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
         </div>
 
         {/* Regulatory & Risk Awareness Statement */}
-        <div className="mt-12 pt-8 border-t border-[#1E293B] text-xs leading-relaxed text-slate-500">
-          <div className="flex items-start gap-3 p-4 rounded-lg bg-[#0E1526] border border-[#1E293B]">
-            <ShieldAlert className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+        <div className="mt-12 pt-8 border-t border-[#1C2430] text-xs leading-relaxed text-[#A7B0BD]">
+          <div className="flex items-start gap-3 p-4 rounded-xl bg-[#11151B] border border-[#1C2430]">
+            <ShieldAlert className="w-5 h-5 text-[#F5A623] shrink-0 mt-0.5" />
             <div>
-              <span className="font-semibold text-slate-300">Mandatory Risk Disclosure:</span> Trading foreign exchange, digital assets, equities, and derivative contracts involves substantial risk of loss and is not suitable for every investor. Quantitative models and artificial intelligence tools provide statistical analysis and algorithmic automation but do not guarantee profitable outcomes or eliminate market volatility. You should never allocate funds you cannot afford to lose. Please review our full{' '}
+              <span className="font-bold text-white">Mandatory Risk Disclosure:</span> Trading foreign exchange, digital assets, equities, and derivative contracts involves substantial risk of loss and is not suitable for every investor. Quantitative models and artificial intelligence tools provide statistical analysis and algorithmic automation but do not guarantee profitable outcomes or eliminate market volatility. You should never allocate funds you cannot afford to lose. Please review our full{' '}
               <button
                 type="button"
                 onClick={() => onNavigate('/risk-disclosure')}
-                className="text-amber-400 hover:underline font-medium inline"
+                className="text-[#F5A623] hover:underline font-bold inline"
               >
                 Risk Disclosure Statement
               </button>{' '}
@@ -188,11 +209,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-6 border-t border-[#1E293B] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-8 pt-6 border-t border-[#1C2430] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#677284]">
           <p>© 2022–{new Date().getFullYear()} Crestiqtrades. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span>Platform Foundation Phase 1</span>
-            <span className="text-slate-600">|</span>
+            <span>Institutional Quantitative Infrastructure</span>
+            <span className="text-[#1C2430]">|</span>
             <span>Security-First Architecture</span>
           </div>
         </div>

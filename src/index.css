@@ -7,23 +7,46 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #0B0F19;
-  color: #E2E8F0;
+  background-color: #0B0D10;
+  color: #F5F7FA;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom scrollbars for data tables and panels */
+/* Custom crisp scrollbars for financial data tables and terminal panels */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B0F19;
+  background: #0B0D10;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1E293B;
-  border-radius: 3px;
+  background: #1C2430;
+  border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #2A3648;
+}
+
+/* Strict No-Glassmorphism Rule: solid surfaces, architectural borders */
+.cq-card {
+  background-color: #11151B;
+  border: 1px solid #1C2430;
+}
+
+.cq-card:hover {
+  border-color: #2A3648;
+}
+
+.cq-card-elevated {
+  background-color: #181E27;
+  border: 1px solid #2A3648;
+}
+
+.cq-badge-blue {
+  background-color: #12234A;
+  color: #4A8DFF;
+  border: 1px solid #246BFD33;
 }

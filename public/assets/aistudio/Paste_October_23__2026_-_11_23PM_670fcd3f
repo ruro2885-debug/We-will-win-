@@ -1,0 +1,1860 @@
+CRESTIQTRADES — CRITICAL MASTER TRANSFORMATION PROMPT
+
+Premium Visual Art Direction, Distinctive Page Experiences, Realistic Imagery, Typography, Branding, Firebase Integration and Production-Quality Implementation
+
+YOUR ROLE AND THE STANDARD YOU MUST ACHIEVE
+
+Act as a senior product designer, award-winning digital art director, experienced fintech UI/UX architect, professional brand designer, senior frontend engineer, and Firebase application engineer working together on one product.
+
+You are working on Crestiqtrades, an AI-powered trading platform.
+
+Your task is to improve the actual application, not simply describe improvements, generate another design concept, or create a superficial list of recommendations.
+
+The existing application has a promising direction and a logo that I like. However, its presentation still has visual characteristics associated with generic AI-generated websites: predictable color combinations, generic icons, insufficiently differentiated pages, typography that feels too thin, weak visual storytelling, and pages that appear to be the same template with different titles.
+
+These problems must be addressed throughout the application.
+
+I want a product that looks deliberately designed by an experienced team that understands trading platforms, financial products, typography, imagery, interface composition, visual hierarchy, and the expectations of serious users.
+
+Do not interpret this request as permission to discard everything that is already good. Retain the existing Crestiqtrades identity and the logo I have approved, then substantially improve the visual quality, page compositions, supporting imagery, typography, iconography, and overall experience.
+
+The objective is not to make the application look more futuristic. The objective is to make it look more credible, distinctive, polished, intentional, and professionally designed.
+
+A website can have animations, charts, illustrations, and attractive colors and still look poorly designed. Every visual decision must contribute to the product’s identity and the user’s understanding of the interface.
+
+⸻
+
+PART 1 — CRITICAL MUST-FOLLOW TASKS
+
+Complete these requirements before considering the work finished.
+
+1. Preserve the existing Crestiqtrades logo that has already been approved. Do not replace it with a different logo.
+2. Use that same approved logo as the website’s favicon and application icon where appropriate.
+3. Replace the generic purple-and-blue visual direction with a controlled, sophisticated blue, white, and black brand system inspired by the disciplined color balance found in professional trading applications.
+4. Do not copy Pocket Option’s exact design, layouts, assets, or branding. Use the reference only to understand how blue, white, and black can work together effectively.
+5. Eliminate childish, generic, inconsistent, or obviously AI-generated iconography.
+6. Establish a stronger typography system. Do not use excessively thin fonts for important headings, figures, navigation, or financial values.
+7. Redesign individual pages so that each has a distinctive layout, relevant imagery, and a clear visual purpose.
+8. Give the AI Trading page a particularly strong visual identity. It must not be a plain heading followed by generic cards and paragraphs.
+9. Add purposeful, high-quality imagery that supports the content. Do not fill pages with random stock photographs or unrelated futuristic graphics.
+10. Improve the actual application, including responsive behavior, interactions, spacing, typography, assets, and navigation. Do not stop after making the homepage attractive.
+11. Preserve existing working functionality, routing, authentication, data persistence, and Firebase configuration unless a specific change is necessary to correct a problem.
+12. Keep the nine-section admin dashboard architecture intact if it already exists. Do not remove or simplify its required sections.
+13. Do not place an admin link, admin button, or admin portal promotion on the public landing page.
+14. Do not introduce glassmorphism, excessive gradients, glowing outlines, floating decorative icons, or unnecessary visual effects.
+15. Do not invent trading performance, user counts, live market statistics, account balances, reviews, licenses, or financial results to make the website appear more impressive.
+16. Do not add the social-sharing preview image or other GitHub preview metadata at this stage. I will handle the metadata myself on GitHub after this work.
+17. Do not create a replacement logo merely because the existing logo needs better integration. Use the approved asset and improve how it is displayed.
+18. Use the existing project structure and implement the changes directly. Do not respond with recommendations alone.
+
+These requirements take precedence over generic design defaults.
+
+⸻
+
+PART 2 — UNDERSTAND THE VISUAL PROBLEM BEFORE IMPLEMENTING THE SOLUTION
+
+The current problem is not simply that the application needs more color or more images.
+
+The deeper problem is that its visual language feels too predictable.
+
+For example:
+
+* A heading is placed at the top of a page.
+* Several rounded cards appear underneath it.
+* Each card contains a generic icon.
+* The icons use similar purple or blue colors.
+* The page repeats the same spacing and composition as other pages.
+* The content changes, but the visual experience barely changes.
+* A feature that should have a strong visual identity is represented by a small icon and a paragraph.
+* Typography is too light in places where strong, confident typography is necessary.
+* The interface relies on generic gradients instead of carefully composed layouts and meaningful visual assets.
+
+This is the pattern you must break.
+
+Do not simply add more cards, more gradients, more icons, or more decorative shapes. Those additions can make the problem worse.
+
+Instead, use:
+
+* Strong editorial layouts.
+* Carefully controlled color.
+* Confident typography.
+* Distinctive visual compositions.
+* Purposeful product screenshots.
+* High-quality custom illustrations.
+* Realistic financial interface components.
+* Clear information hierarchy.
+* Meaningful differences between product sections.
+* Consistent design rules with enough flexibility to make individual pages memorable.
+
+A professional product does not need every section to look different in a random way. It needs a coherent design system that allows different sections to communicate different ideas.
+
+Make the product feel like one carefully designed trading platform, not a collection of generated templates.
+
+⸻
+
+PART 3 — ESTABLISH A DISTINCTIVE CRESTIQTRADES BRAND SYSTEM
+
+3.1 Primary color direction
+
+The primary visual direction must be built around:
+
+* Deep black and near-black.
+* Clean white.
+* Carefully selected blues.
+* Restrained neutral grays.
+
+Purple must not be a dominant brand color.
+
+Remove the generic purple-and-blue combination that commonly appears in automatically generated AI interfaces. Do not replace it with an equally generic arrangement of bright cyan, electric blue, and glowing gradients.
+
+Blue must be used with discipline.
+
+It should help users identify important actions, active states, selected controls, key information, and brand elements. It should not be sprayed across every card, icon, border, heading, and decorative object.
+
+Establish a controlled palette with documented design tokens. Use the following as initial direction rather than an excuse to apply the same colors everywhere:
+
+* Primary dark: approximately #0B0D10.
+* Secondary dark: approximately #11151B.
+* White: approximately #FFFFFF.
+* Soft white: approximately #F5F7FA.
+* Primary blue: approximately #246BFD.
+* Supporting blue: approximately #4A8DFF.
+* Muted text on dark surfaces: approximately #A7B0BD.
+* Muted text on light surfaces: approximately #5F6875.
+* Subtle borders: neutral gray with sufficient contrast.
+* Positive financial states: a restrained, readable green.
+* Negative financial states: a restrained, readable red.
+
+These are starting points, not a requirement to use every token in every section.
+
+Test contrast, legibility, and appearance across actual page compositions. Adjust the precise shades when necessary to achieve a more refined result.
+
+Do not use bright blue for every button. Do not use green as a decorative brand color everywhere merely because it is associated with trading.
+
+3.2 Control the color distribution
+
+Use dark and light surfaces deliberately.
+
+A dark hero section can transition into a white or soft-neutral information section. A dark AI feature can be followed by a bright explanatory section. A detailed trading interface can use a darker workspace surrounded by carefully organized neutral surfaces.
+
+This variation gives the website rhythm.
+
+Avoid making every section a dark rectangle stacked on another dark rectangle.
+
+Avoid making every section white either.
+
+The design should have a planned visual progression from the top of the page to the footer.
+
+The transitions must feel natural and deliberate, with consistent container widths, alignment, typography, and spacing.
+
+Do not use gradients to compensate for weak composition.
+
+3.3 Establish a complete design-token system
+
+Create centralized design tokens for:
+
+* Brand colors.
+* Surface colors.
+* Text colors.
+* Borders.
+* Shadows.
+* Typography.
+* Heading sizes.
+* Body-text sizes.
+* Line heights.
+* Font weights.
+* Spacing.
+* Container widths.
+* Border radii.
+* Button heights.
+* Input heights.
+* Navigation dimensions.
+* Image proportions.
+* Breakpoints.
+* Focus indicators.
+* Hover and active states.
+* Motion durations.
+
+Use the existing project’s styling architecture where possible.
+
+Do not create conflicting color definitions in individual components.
+
+A single brand adjustment should be possible without hunting through dozens of files.
+
+The token system must make it easy to preserve consistency while allowing individual pages to have their own composition.
+
+⸻
+
+PART 4 — TYPOGRAPHY MUST FEEL CONFIDENT, PROFESSIONAL AND READABLE
+
+Typography is one of the main reasons an interface looks professionally designed or cheaply generated.
+
+The current thin-looking typography must be corrected.
+
+4.1 Font selection
+
+Inspect the existing fonts and identify where they are being used.
+
+Choose a professional, highly legible sans-serif typeface appropriate for a serious fintech product.
+
+Potential directions include Inter, Manrope, or another well-designed contemporary sans-serif. Choose a suitable typeface based on actual visual performance rather than automatically combining several fashionable fonts.
+
+Do not load numerous font families without a clear reason.
+
+Prefer a small, coherent type system.
+
+If using an externally hosted font, ensure that it loads reliably. Where practical, use appropriately licensed font assets and sensible fallback stacks.
+
+4.2 Font-weight requirements
+
+Do not use very thin font weights for important interface elements.
+
+Establish a clear hierarchy, for example:
+
+* Hero headings: approximately 700–800 weight.
+* Main page headings: approximately 700.
+* Section headings: approximately 650–750.
+* Financial figures: approximately 650–750.
+* Card titles: approximately 600–700.
+* Navigation: approximately 500–600.
+* Body text: approximately 400–450.
+* Supporting text: approximately 400–450.
+* Button labels: approximately 600.
+
+Adjust these weights to suit the selected font.
+
+The important requirement is that text must not look weak, faded, or unnecessarily delicate.
+
+Do not make all text bold. Strong typography depends on contrast between weights, sizes, line lengths, and spacing.
+
+4.3 Headings
+
+Use large, confident headings for major sections.
+
+Give important headings appropriate line breaks and sufficient space around them.
+
+Avoid the generic pattern of a small colored eyebrow label, a large two-line heading, a short paragraph, and three identical cards repeated across every page.
+
+That pattern can work occasionally, but it must not become the entire application’s design language.
+
+Each major section needs an appropriate composition.
+
+4.4 Financial figures and numbers
+
+Financial values must be easy to scan.
+
+Use readable, sufficiently weighted numerals.
+
+Where supported by the selected font, use tabular numerals for aligned monetary values and tables.
+
+Maintain consistent formatting for currencies, percentages, quantities, and timestamps.
+
+Do not display decorative decimals, random balances, fabricated returns, or arbitrary percentages merely to make a screen look active.
+
+If an account has no real data, present a clear empty state rather than inventing figures.
+
+4.5 Responsive typography
+
+Define a deliberate scale for desktop, tablet, and mobile.
+
+Prevent oversized headings from overflowing narrow screens.
+
+Prevent important headings from shrinking until they become difficult to read.
+
+Check line wrapping, paragraph widths, button labels, tables, navigation, and numeric values on small screens.
+
+Typography must be tested in the real interface, not just selected from a design-token list.
+
+⸻
+
+PART 5 — REPLACE GENERIC ICONOGRAPHY WITH PROFESSIONAL ICONS
+
+The existing icons are a major visual concern.
+
+Do not use childish, inconsistent, randomly generated, or obviously generic icons.
+
+5.1 Use a consistent professional icon system
+
+Inspect the icons currently used throughout the application.
+
+Replace poor-quality icons with a coherent, professionally designed icon library where appropriate.
+
+A well-maintained library such as Lucide can be suitable for conventional interface controls. Other established libraries are acceptable if they better suit the product.
+
+However, installing a popular icon library does not automatically solve the visual problem.
+
+Choose icons carefully, using the correct visual weight, proportions, and level of detail.
+
+Use consistent:
+
+* Stroke weight.
+* Visual scale.
+* Alignment.
+* Optical balance.
+* Corner treatment.
+* Spacing.
+* Active-state behavior.
+
+Icons should look like they belong to the same product.
+
+5.2 No emoji as interface icons
+
+Do not use emojis as substitutes for professional interface icons.
+
+Do not use emoji brains, lightning bolts, rockets, coins, shields, robots, or other emoji symbols as primary feature illustrations.
+
+Do not use arbitrary Unicode characters as icons.
+
+Do not use a generic icon in a colored circle for every feature.
+
+5.3 Use icons only when appropriate
+
+Not every section needs an icon.
+
+Some features should be explained through imagery, charts, diagrams, or a carefully composed interface preview.
+
+A large AI Trading section should not rely on a tiny brain icon to communicate its entire concept.
+
+A Markets page should use meaningful market visualizations and asset information where real data is available.
+
+A Copy Trading page should communicate strategy discovery, trader profiles, and allocation controls through a more appropriate composition.
+
+An icon should support a message, not replace the entire visual experience.
+
+5.4 Avoid unnecessary icon containers
+
+Do not automatically put every icon inside a colored circular background.
+
+Avoid repeated icon boxes with purple, blue, or gradient backgrounds.
+
+Use plain icons, restrained surface treatments, or purpose-built illustrations depending on the context.
+
+If an icon appears inside a button, ensure it is correctly aligned and does not overwhelm the label.
+
+5.5 Verify every icon
+
+Check the actual rendered icons across the application.
+
+No missing glyphs, broken SVGs, placeholder squares, inconsistent icon sizes, or incorrectly aligned symbols.
+
+Do not use icons that imply an action the product does not actually support.
+
+⸻
+
+PART 6 — HIGH-QUALITY IMAGERY IS A CORE REQUIREMENT
+
+This is one of the most important parts of the transformation.
+
+The application currently needs more meaningful visual storytelling.
+
+When a user opens the AI Trading page, they should immediately understand the concept from the page’s visual composition, not only from its heading.
+
+When they navigate to Copy Trading, the imagery should communicate a different idea.
+
+When they open Markets, they should see a page designed around market information.
+
+When they open Portfolio, the experience should focus on holdings, performance, and allocation.
+
+Do not reuse one generic illustration on every page.
+
+6.1 Images must have a purpose
+
+Every major image must answer at least one question:
+
+* What feature is this page explaining?
+* What does the product experience look like?
+* What is the user expected to understand?
+* Why does this image belong in this particular section?
+* Does the image make the product more understandable or visually distinctive?
+
+If an image does not answer any of these questions, do not use it.
+
+6.2 Prohibit random stock imagery
+
+Do not fill the website with unrelated photographs of:
+
+* People wearing headsets.
+* Generic corporate teams.
+* Anonymous businessmen looking at screens.
+* Random city skylines.
+* Decorative robots.
+* Unrelated cryptocurrency coins.
+* Generic abstract neural networks.
+* Floating glowing cubes.
+* Random digital globes.
+* Unrelated futuristic technology.
+* Stock photographs that do not communicate anything about the feature.
+
+Do not use random images merely to satisfy a requirement that the page contain pictures.
+
+6.3 Create a deliberate visual asset strategy
+
+Use a combination of the following, depending on the page:
+
+1. Purpose-built product interface mockups.
+2. Carefully composed screenshots of the actual application.
+3. High-quality custom illustrations.
+4. Relevant editorial imagery.
+5. Accurate financial charts and diagrams.
+6. Distinctive feature-specific visual assets.
+7. Subtle textures or background details used sparingly.
+
+Where possible, build the visual storytelling around the real Crestiqtrades product interface.
+
+For example, an AI Trading hero could contain a realistic, custom-designed representation of an AI strategy workspace, a market analysis panel, a chart, a risk-control panel, and a clear explanation of how the feature is intended to operate.
+
+A Copy Trading hero could show a carefully composed strategy-discovery interface with trader profiles, transparent performance history, risk information, and allocation controls.
+
+A Markets page could show a clean market-monitoring interface with asset names, prices, percentage changes, charts, and filters—but only use real data or clearly identified illustrative data.
+
+These visuals should look like parts of a coherent product rather than unrelated images placed beside headings.
+
+6.4 Use image generation when it is genuinely useful
+
+If the development environment supports image generation or provides a way to create and add image assets, use it for original visual assets when needed.
+
+However, do not treat image generation as permission to place random AI artwork everywhere.
+
+The assets must have an intentional art direction.
+
+They should fit the brand’s colors, proportions, lighting, and composition.
+
+Do not create illustrations with garbled interface text and then present that text as functioning product UI.
+
+If an image contains a simulated trading interface, the visual may be used as an illustration, but all real interface controls must remain actual HTML or application components.
+
+6.5 Image quality requirements
+
+Every selected image must be:
+
+* Relevant.
+* High quality.
+* Properly sized.
+* Correctly cropped.
+* Responsive.
+* Visually consistent with the surrounding section.
+* Optimized for performance.
+* Legible where it contains interface detail.
+* Free of unnecessary watermarks.
+* Properly licensed or original.
+* Accessible through appropriate alternative text when informative.
+
+Do not stretch images or use awkward crops.
+
+Do not let images obscure important text.
+
+Do not use huge files that unnecessarily slow the website.
+
+6.6 Do not make every image a floating 3D object
+
+Avoid a page full of floating phones, tilted cards, glass spheres, coins, glowing objects, and artificial depth effects.
+
+A carefully composed product preview can be effective, but use it because it supports the page’s purpose.
+
+Different pages should have different visual compositions.
+
+Some may use a wide product interface. Others may use a strong editorial split layout, a detailed chart, a comparison table, or a large feature illustration.
+
+The design must be selective.
+
+⸻
+
+PART 7 — MAKE EVERY PAGE DISTINCTIVE
+
+This requirement applies to the entire application.
+
+Do not redesign only the homepage and leave the rest of the pages with identical layouts.
+
+Do not simply change the page title, replace a paragraph, and keep the same cards.
+
+Every important page must have its own composition, visual emphasis, information hierarchy, and relevant visual assets.
+
+At the same time, shared navigation, buttons, spacing rules, colors, typography, and controls must remain consistent.
+
+7.1 Homepage
+
+The homepage should introduce the overall brand and product.
+
+It should feel polished, memorable, and immediately understandable.
+
+Give the hero a distinctive composition, not a generic centered headline above three cards.
+
+Use a strong headline, supporting copy, a clear primary action, an appropriate secondary action, and a visually compelling product-related asset.
+
+The image and headline should work together.
+
+Below the hero, introduce the platform through carefully arranged sections with varying compositions.
+
+Possible section treatments include:
+
+* A split editorial section.
+* A large product interface preview.
+* A dark feature section.
+* A light explanatory section.
+* A carefully designed feature comparison.
+* A process diagram.
+* A structured FAQ.
+* A strong closing call to action.
+
+Do not force every section into a three-column card grid.
+
+Use the content to determine the layout.
+
+7.2 AI Trading page
+
+This page requires special attention.
+
+It must have its own recognizable visual identity.
+
+Do not present a title, a short paragraph, three generic cards, and a small AI icon.
+
+The page should immediately communicate the concept through a large, relevant, professionally composed visual.
+
+The composition could combine a realistic AI strategy workspace, a market chart, analysis indicators, and a clearly organized control panel.
+
+The visual hierarchy should guide the user through:
+
+1. What AI Trading is.
+2. What the feature is designed to do.
+3. How the user would interact with it.
+4. What information the user can inspect.
+5. What controls or risk settings are available, if implemented.
+6. What the user should understand before using it.
+7. How to proceed to the next step.
+
+Do not claim that the AI guarantees profits, predicts markets perfectly, or executes live trades unless the actual implementation supports the specific claim and it is properly substantiated.
+
+If the current product is in a simulation or development stage, describe it honestly.
+
+AI Trading visual composition
+
+Build a distinctive page rather than another generic dashboard template.
+
+Use a strong hero composition with a meaningful visual anchor.
+
+The main visual could depict a realistic product interface with:
+
+* A chart area.
+* A strategy or signal summary.
+* Market context.
+* Risk information.
+* Relevant controls.
+* Clear status labels.
+
+Every element shown must have a reason to exist.
+
+Do not add random graphs, arbitrary numerical values, or decorative data panels just to make the image appear complex.
+
+If the image represents an illustrative interface rather than a working feature, do not misrepresent it as a live trading session.
+
+Below the hero, vary the composition.
+
+One section could explain the analysis process through a visual sequence. Another could show the actual control interface. Another could explain risk management through a clear diagram or structured information panel.
+
+Avoid repeating the same card layout from the homepage.
+
+The page should be visually memorable even before the user reads every word.
+
+7.3 Copy Trading page
+
+Copy Trading should feel different from AI Trading.
+
+Its visual language should communicate strategy discovery, following a trader, reviewing performance, evaluating risk, and managing an allocation.
+
+Where functionality exists, use relevant interface elements such as:
+
+* Trader profiles.
+* Strategy summaries.
+* Historical performance charts.
+* Risk classifications.
+* Drawdown information.
+* Copy allocation controls.
+* Strategy status.
+* Clear risk disclosures.
+
+Use realistic, professionally composed trader profile visuals where they genuinely help.
+
+Do not use repeated generic avatars or random portraits that make the platform look artificial.
+
+If illustrative trader profiles are necessary for a design preview, identify them as examples and never present their performance as real.
+
+Do not invent successful traders, follower counts, verified performance, or guaranteed returns.
+
+Make this page feel like a strategy-discovery product, not a duplicate of the AI Trading page.
+
+7.4 Markets page
+
+The Markets page should be built around market information rather than promotional content.
+
+Use a clear, information-dense layout suitable for scanning.
+
+Prioritize:
+
+* Asset name and symbol.
+* Current price when a valid data source is connected.
+* Percentage movement.
+* Relevant chart.
+* Search.
+* Filters.
+* Category selection.
+* Asset details.
+* Loading, empty, and error states.
+
+Use restrained highlights for important price movements.
+
+Do not use colorful icons for every asset without a reason.
+
+Use consistent financial formatting.
+
+Do not fabricate live prices.
+
+If no market-data provider is connected, display an honest unavailable, loading, or sample-data state as appropriate. Never label sample values as live market data.
+
+The Markets page should feel like a genuine market-monitoring environment.
+
+7.5 Portfolio page
+
+The Portfolio page should emphasize the user’s own financial position.
+
+Use a clear hierarchy between:
+
+* Total portfolio value.
+* Available balance.
+* Allocated capital, if supported.
+* Holdings.
+* Asset allocation.
+* Historical performance.
+* Transaction activity.
+
+Only show figures backed by the user’s actual account records or a clearly labeled illustrative state.
+
+Do not populate the page with random balances, arbitrary profit percentages, or fake holdings.
+
+Use purposeful charts with readable axes, appropriate time ranges, and accurate labels.
+
+Do not use a flat decorative line simply to fill space.
+
+If no holdings exist, provide a designed empty state that explains the next available action.
+
+This page should feel precise, trustworthy, and easy to understand.
+
+7.6 Wallet page
+
+The Wallet page should feel operational rather than promotional.
+
+Prioritize:
+
+* Available balance.
+* Deposit and withdrawal actions.
+* Supported asset or currency information.
+* Recent transactions.
+* Transaction statuses.
+* Relevant payment or wallet details.
+
+Make important actions easy to identify without overwhelming the page with bright colors.
+
+Use clear confirmation and error states.
+
+Never imply that a payment has been received or a withdrawal completed unless the underlying records support that status.
+
+If an action is not yet integrated, do not make it appear to be a functioning financial operation.
+
+7.7 Dashboard page
+
+The dashboard should provide an overview of the user’s account and relevant activity.
+
+Avoid filling it with unnecessary widgets.
+
+Show only information that helps the user understand their account and decide what to do next.
+
+Use a deliberate hierarchy and carefully aligned financial figures.
+
+The dashboard may include account summary information, portfolio overview, recent activity, relevant market information, and feature shortcuts where supported.
+
+Do not turn every statistic into a colorful card.
+
+Use a combination of typography, whitespace, restrained surfaces, and meaningful data visualization.
+
+7.8 About page
+
+The About page should communicate the company’s identity and purpose.
+
+Use a more editorial layout rather than a generic grid of feature cards.
+
+Explain the platform’s purpose and approach using clear, credible language.
+
+The company was established in 2022, as specified for this project.
+
+Do not invent its physical address, regulatory licenses, registration numbers, team members, partnerships, awards, or customer counts.
+
+If company contact information has not been supplied, do not reuse contact details from a different project.
+
+7.9 Support page
+
+The Support page should prioritize clarity and accessibility.
+
+Use a clean support layout with relevant categories, contact methods that are genuinely configured, and clear instructions.
+
+If the application contains a support-ticket system, integrate the page with it.
+
+If a support channel has not been configured, do not fabricate one.
+
+The page should not be visually identical to the AI Trading or Markets pages.
+
+7.10 Authentication pages
+
+Login, registration, and password-reset pages should be focused and professional.
+
+Use strong typography, restrained color, readable forms, proper validation, clear errors, and a well-composed layout.
+
+Do not overwhelm authentication screens with unnecessary background effects or decorative illustrations.
+
+Use the approved Crestiqtrades branding.
+
+The form should be the main focus.
+
+Ensure the design remains usable on narrow screens and that authentication behavior is real.
+
+7.11 Admin pages
+
+The admin system must remain separate from the public marketing experience.
+
+Do not add a visible admin link to the public navigation or footer.
+
+Do not turn the admin dashboard into another marketing page.
+
+Maintain the existing required admin sections and their operational purpose.
+
+Use a dense but readable administrative layout, appropriate tables, useful filters, clear status labels, and consistent controls.
+
+The admin interface must not rely on fabricated statistics or fake user records.
+
+Protect sensitive records and privileged actions through actual authorization, not merely hidden UI elements.
+
+⸻
+
+PART 8 — CREATE A REAL VISUAL DESIGN SYSTEM, NOT A COLLECTION OF TEMPLATES
+
+The application needs reusable components, but reusable components must not result in every page looking identical.
+
+Create a design system that separates consistency from repetition.
+
+8.1 Shared components
+
+Where appropriate, create reusable components for:
+
+* Brand logo.
+* Header.
+* Navigation.
+* Footer.
+* Buttons.
+* Form controls.
+* Inputs.
+* Select menus.
+* Status badges.
+* Tabs.
+* Tables.
+* Chart containers.
+* Loading indicators.
+* Empty states.
+* Error states.
+* Toast notifications.
+* Dialogs.
+* Cookie preferences.
+* Image containers.
+* Section headings.
+* Responsive page containers.
+
+Do not use one universal card component for every content type.
+
+A financial summary, a trader profile, a product screenshot, a market row, and an editorial content section should not all look like the same rounded rectangle.
+
+Build components according to their actual purpose.
+
+8.2 Vary page composition intelligently
+
+Use different layouts where they make sense:
+
+* Full-width editorial hero.
+* Asymmetric split layout.
+* Product-interface showcase.
+* Wide chart workspace.
+* Structured data table.
+* Vertical process timeline.
+* Comparison layout.
+* Full-width visual section.
+* Carefully arranged two-column information section.
+* Compact operational dashboard.
+
+Do not use every layout on every page.
+
+Select the composition that best explains the feature.
+
+8.3 Control border radii
+
+Avoid excessive rounding.
+
+Do not turn every section, card, button, input, image, and container into a large pill-shaped or heavily rounded element.
+
+Choose a restrained radius scale.
+
+Use sharper, more precise shapes where they communicate a professional trading interface.
+
+Reserve more rounded treatments for components that genuinely benefit from them.
+
+8.4 Control shadows
+
+Do not give every card a large shadow.
+
+Use shadows only when they communicate hierarchy or elevation.
+
+Prefer restrained borders and clear surface contrast where possible.
+
+Avoid neon glows, glowing card outlines, and artificial halos.
+
+8.5 Control gradients
+
+Gradients may be used sparingly if they improve the composition.
+
+Do not use gradients as a substitute for a clear brand system.
+
+Do not place purple-blue gradients behind every feature.
+
+Do not add gradient text to every heading.
+
+Do not apply glowing gradient borders to ordinary cards.
+
+8.6 Control spacing
+
+Use a consistent spacing scale.
+
+Avoid cramped layouts, excessive empty areas, awkward gaps, and inconsistent alignment.
+
+Make sure text and images feel like parts of the same composition.
+
+The layout should have a clear rhythm from top to bottom.
+
+⸻
+
+PART 9 — MAKE THE PRODUCT FEEL LIKE A REAL FINTECH APPLICATION
+
+A premium trading interface must be more than a beautiful landing page.
+
+It must be consistent and functional throughout.
+
+9.1 Interface states
+
+Every important interactive component should have the appropriate states:
+
+* Default.
+* Hover.
+* Focus.
+* Active.
+* Disabled.
+* Loading.
+* Success.
+* Error.
+* Empty.
+
+Do not leave controls looking clickable when they cannot be used.
+
+Do not use a loading animation indefinitely when an operation has failed.
+
+Do not show success notifications for actions that did not succeed.
+
+9.2 Buttons
+
+Every button must have a defined action.
+
+If it navigates, navigate to the correct route.
+
+If it submits a form, validate and submit the form.
+
+If it opens a menu, implement the menu.
+
+If it triggers a feature that has not been integrated, communicate that honestly rather than simulating a successful operation.
+
+Use consistent heights, typography, padding, focus indicators, and hover behavior.
+
+Primary actions should be visually prominent but not excessively bright.
+
+9.3 Navigation
+
+Verify every navigation item.
+
+Prevent broken links and incorrect routes.
+
+Preserve the correct page when users refresh a route directly.
+
+Ensure nested routes work with the existing hosting configuration.
+
+Do not allow a catch-all route to intercept /admin incorrectly.
+
+Keep mobile navigation usable and uncluttered.
+
+9.4 Charts
+
+Use charts because they communicate information, not because a dashboard is expected to contain a chart.
+
+Charts must have appropriate labels, time ranges, axes, tooltips, and responsive sizing where relevant.
+
+Use realistic line shapes when displaying illustrative charts, but never present illustrative values as real account performance.
+
+Do not smooth a chart so aggressively that it becomes misleading.
+
+Do not generate random chart movements to create the impression of live market activity.
+
+⸻
+
+PART 10 — APPLY THE DESIGN TO THE EXISTING CRESTIQTRADES PROJECT
+
+Before making changes, examine the actual current project files and implementation.
+
+This is an instruction to understand the existing code so that changes are applied correctly. It is not permission to stop at an audit report.
+
+Do the work.
+
+Identify:
+
+* The current framework.
+* The entry point.
+* The routing system.
+* Existing page components.
+* Existing styling architecture.
+* Current logo asset.
+* Current favicon configuration.
+* Existing image assets.
+* Authentication implementation.
+* Firebase initialization.
+* Existing data models.
+* Existing admin route.
+* Existing responsive behavior.
+* Any working features that must be preserved.
+
+Do not assume a framework version or invent files that conflict with the current setup.
+
+Do not replace a working project with an unrelated starter template.
+
+Do not delete functioning features simply because a new implementation is easier to generate.
+
+If a component needs significant improvement, improve or replace that component while preserving the surrounding functionality and data contracts.
+
+If the existing project already has a design system, improve it instead of creating a conflicting second system.
+
+If the project is incomplete, implement the missing pieces using the existing architecture.
+
+Do not finish by telling me what should be changed. Implement the changes.
+
+⸻
+
+PART 11 — PRESERVE THE APPROVED CRESTIQTRADES LOGO
+
+The current Crestiqtrades logo is approved.
+
+I like it. Preserve it.
+
+Do not replace it with a generic letter inside a circle, an emoji, a stock icon, or a newly generated symbol.
+
+11.1 Find and reuse the existing asset
+
+Locate the approved logo in the current project.
+
+Use the actual asset wherever possible.
+
+Do not redraw the logo in CSS or substitute plain text because the asset is inconvenient to locate.
+
+If multiple logo files exist, determine which one matches the approved version.
+
+Preserve the original proportions and visual details.
+
+11.2 Integrate it professionally
+
+Check how the logo appears in:
+
+* The desktop header.
+* The mobile header.
+* The footer.
+* Authentication pages.
+* Any application navigation that already exists.
+* The browser favicon.
+* The application icon, where applicable.
+
+Use suitable sizing and spacing.
+
+Do not stretch the logo.
+
+Do not place it inside an unnecessary colored circle or decorative container.
+
+Do not add effects that damage its original appearance.
+
+11.3 Use the same approved logo as the favicon
+
+This requirement is mandatory.
+
+The same approved logo must be used for the browser favicon.
+
+Use the appropriate asset format and size.
+
+If necessary, generate correctly sized favicon variants from the existing approved logo without redesigning its mark.
+
+Ensure the favicon files actually exist in the project.
+
+Update the application’s HTML entry point to reference the correct local favicon assets.
+
+Verify the paths and casing.
+
+Do not assume that saving a logo file automatically makes it the favicon.
+
+Do not leave the default Vite, React, framework, or browser-template favicon in place.
+
+Check the browser tab configuration and remove obsolete favicon references.
+
+Do not generate the social-sharing preview image or add the preview metadata I said I would handle later.
+
+⸻
+
+PART 12 — BUILD A DISTINCTIVE, HIGH-QUALITY LANDING PAGE
+
+The landing page is the introduction to the brand.
+
+It must establish credibility and communicate the product without overwhelming the visitor.
+
+12.1 Header
+
+Create a polished, responsive header with:
+
+* The approved Crestiqtrades logo.
+* Clearly organized primary navigation.
+* Appropriate navigation labels.
+* A clear sign-in action.
+* A clear registration or getting-started action.
+* Proper desktop and mobile behavior.
+
+Do not add an admin button.
+
+Do not use excessive navigation links merely to make the header appear more complete.
+
+Use appropriate spacing and typography.
+
+Avoid a large translucent glass header.
+
+A solid or carefully controlled surface is preferable.
+
+12.2 Hero section
+
+Create a memorable hero that communicates the purpose of Crestiqtrades immediately.
+
+Use a strong headline, concise supporting text, a primary action, and a relevant secondary action.
+
+The hero must contain a visual element that is specific to the product.
+
+Do not use a generic illustration simply because it is visually attractive.
+
+The visual should help users understand the platform.
+
+Use a carefully composed layout rather than placing random elements around the headline.
+
+The hero must work on desktop and mobile.
+
+On mobile, the main message must remain prominent and the visual must not create excessive scrolling before the user understands the product.
+
+12.3 Product introduction
+
+Explain what Crestiqtrades offers using clear, factual language.
+
+Avoid unsupported claims such as guaranteed profits, perfect AI predictions, risk-free trading, or guaranteed withdrawals.
+
+Do not claim that a feature is live unless it is implemented.
+
+12.4 Feature sections
+
+Create sections for relevant product capabilities, such as:
+
+* AI Trading.
+* Copy Trading.
+* Markets.
+* Portfolio.
+* Account and wallet management.
+* Trading analytics and risk controls, where implemented.
+
+Do not give every feature the same layout.
+
+Give the AI Trading section a strong visual demonstration.
+
+Give Copy Trading its own composition.
+
+Present Markets through a suitable market-information layout.
+
+Present Portfolio through meaningful data visualization.
+
+Use images and product previews selectively.
+
+12.5 How it works
+
+Explain the actual intended user journey in a clear sequence.
+
+Use a visual process layout if it improves understanding.
+
+Do not invent steps that the product does not support.
+
+12.6 Risk awareness
+
+Include clear, readable risk information appropriate to the actual product.
+
+Do not conceal important risks in tiny gray text.
+
+Do not use misleading financial language.
+
+12.7 Frequently asked questions
+
+Use a polished, accessible FAQ layout.
+
+Ensure the accordion or expansion behavior works correctly if an accordion is used.
+
+Do not fill the FAQ with repetitive marketing language.
+
+12.8 Footer
+
+Create a structured footer with relevant groups such as:
+
+* Platform.
+* Company.
+* Resources.
+* Legal.
+* Account.
+
+Include only valid destinations.
+
+Do not expose the admin route.
+
+Do not invent contact details.
+
+Do not include social links that do not exist.
+
+⸻
+
+PART 13 — CUSTOM COOKIE CONSENT INTERFACE
+
+Implement a polished cookie-consent interface that fits the Crestiqtrades visual identity.
+
+It should feel professionally designed, not like a generic plugin inserted without styling.
+
+The interface must be functional, accessible, and respectful of user choice.
+
+13.1 Initial presentation
+
+Use a clean, readable panel with appropriate spacing and typography.
+
+A light or white surface can work well against the site’s dark sections.
+
+Use a clear heading such as:
+
+“We value your privacy”
+
+Provide a concise explanation of why optional cookies or similar technologies may be used.
+
+Avoid oversized illustrations, unnecessary gradients, excessive shadows, or translucent glass.
+
+13.2 Required choices
+
+Provide three clearly understandable actions:
+
+* Accept All.
+* Customize.
+* Reject All.
+
+Do not make rejection deliberately difficult.
+
+Do not make the accept button the only prominent choice while hiding rejection.
+
+13.3 Preference categories
+
+Only include categories relevant to the actual application, such as:
+
+* Necessary.
+* Analytics.
+* Marketing, if marketing technologies are actually used.
+
+Necessary functionality must remain available.
+
+Optional categories must respect the user’s choice.
+
+If the application does not use marketing cookies or tracking technologies, do not invent a marketing category simply to make the panel look complete.
+
+13.4 Functional consent
+
+Persist the selected preferences, consent timestamp, and policy version appropriately.
+
+Allow users to reopen cookie settings from the footer.
+
+Do not show the consent panel on every page load after the user has saved a valid choice, unless a legitimate policy or consent-version change requires it.
+
+Make sure optional analytics collection respects applicable consent requirements.
+
+Do not load optional tracking before consent where consent is required.
+
+13.5 Accessibility
+
+Support keyboard interaction, visible focus, readable text, appropriate labels, and mobile layouts.
+
+Ensure the consent interface does not obstruct the entire screen unnecessarily.
+
+Test the actual accept, reject, customize, save, and reopen behaviors.
+
+⸻
+
+PART 14 — FIREBASE CONFIGURATION AND EXISTING BACKEND
+
+Use the Firebase configuration already supplied for Crestiqtrades.
+
+Do not ask me to supply it again.
+
+Do not replace it with another Firebase project.
+
+Do not invent a different project ID.
+
+The following is the exact client configuration to integrate into the project.
+
+14.1 Required Firebase configuration
+
+Use this configuration:
+
+import { initializeApp, getApp, getApps } from "firebase/app";
+const firebaseConfig = {
+  apiKey: "AIzaSyAasIngQUhF_aCorhuAyqVCB78VYWLb0ko",
+  authDomain: "crestiqtrades.firebaseapp.com",
+  projectId: "crestiqtrades",
+  storageBucket: "crestiqtrades.firebasestorage.app",
+  messagingSenderId: "1095352352054",
+  appId: "1:1095352352054:web:d6528e93b420be3918c797",
+  measurementId: "G-Z6C13N1HC0"
+};
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+export default app;
+
+The above initialization must happen only once.
+
+If the project already has a working Firebase initialization file, integrate the exact configuration into the existing implementation instead of creating a second conflicting initialization system.
+
+14.2 Firebase services
+
+Add the necessary SDK imports for the services required by the actual application.
+
+These may include:
+
+* Firebase Authentication.
+* Cloud Firestore.
+* Firebase Storage.
+* Firebase Analytics, with consent-aware initialization.
+* Callable Cloud Functions or another trusted backend mechanism where required.
+
+Do not assume that importing Firebase automatically completes authentication, database access, storage, or privileged operations.
+
+Implement each service properly.
+
+Keep Firebase initialization in a central module and expose reusable service functions to the rest of the application.
+
+Do not scatter duplicate Firebase initialization code throughout page components.
+
+14.3 Authentication
+
+Implement and preserve the required authentication flows:
+
+* Registration.
+* Login.
+* Logout.
+* Password reset.
+* Authentication-state restoration.
+* Clear loading states.
+* Clear authentication errors.
+* Account-specific session handling.
+
+Use Firebase Authentication rather than inventing a client-side authentication system.
+
+Do not create a fake logged-in state.
+
+Do not show one user’s profile or account information to another user.
+
+If an email does not correspond to an account, handle that situation appropriately.
+
+If a password is incorrect, show a clear and secure error.
+
+Do not expose sensitive authentication information in logs or UI messages.
+
+If the required Firebase Authentication provider has not been enabled in the Firebase console, implement the correct integration and explain the specific console dependency. Do not pretend the integration works when Firebase returns a provider-configuration error.
+
+14.4 Account-specific data
+
+All customer data must belong to the authenticated user.
+
+Use stable user identifiers and properly structured records.
+
+Implement appropriate persistence for:
+
+* User profiles.
+* Profile images.
+* Account preferences.
+* Portfolio records.
+* Wallet information.
+* Deposit requests.
+* Withdrawal requests.
+* Transactions.
+* Trade records.
+* Support tickets.
+* Relevant verification statuses.
+
+Do not use local storage as the authoritative financial database.
+
+Do not use static sample objects as a replacement for real user records.
+
+Use local storage only for appropriate non-sensitive preferences or other suitable client-side purposes.
+
+14.5 Firestore security
+
+Create or update Firestore Security Rules where the project supports them.
+
+The rules must enforce:
+
+* Users can access only their own permitted records.
+* Users cannot change their own role to administrator.
+* Users cannot arbitrarily credit their own balance.
+* Users cannot approve their own deposit or withdrawal.
+* Users cannot access another customer’s private records.
+* Administrative access requires trusted authorization.
+* Privileged financial operations cannot be performed by merely modifying client-side requests.
+
+Do not leave the database in open test mode.
+
+Do not use rules such as allow read, write: if true.
+
+Do not treat a hidden button or a client-side role variable as security.
+
+14.6 Storage security
+
+Use Firebase Storage for appropriate user-uploaded assets.
+
+Enforce suitable file-size and content-type limits.
+
+Protect private files.
+
+KYC documents must not be publicly accessible.
+
+Do not store private keys, seed phrases, or passwords in uploaded files or public storage.
+
+Use appropriate access rules and authenticated access.
+
+14.7 Analytics and cookie consent
+
+Integrate Firebase Analytics only in a manner consistent with the application’s consent requirements.
+
+Do not blindly execute getAnalytics(app) on every initial page load if optional analytics must wait for user consent.
+
+Check browser support.
+
+Use the appropriate consent-aware initialization and consent-management mechanisms supported by the SDK version.
+
+Prevent optional analytics events from being emitted before the applicable permission is granted.
+
+Ensure that accepting, rejecting, or changing cookie preferences has the intended effect on optional tracking.
+
+Do not confuse saving a preference in local storage with actually controlling analytics initialization and event collection.
+
+14.8 Trusted backend operations
+
+Use trusted server-side logic for privileged operations where necessary.
+
+Examples include:
+
+* Administrative authorization.
+* Deposit approval.
+* Withdrawal approval.
+* Financial ledger changes.
+* Administrative balance adjustments.
+* Protected account-management actions.
+* Sensitive audit-log creation.
+
+Use Cloud Functions or another appropriate trusted backend.
+
+Do not put Firebase Admin SDK credentials in browser code.
+
+Do not expose private service-account keys.
+
+Do not rely on client-side code as the authority for financial balances or administrative permissions.
+
+⸻
+
+PART 15 — PRESERVE THE CRESTIQTRADES ADMIN ARCHITECTURE
+
+The admin system is part of the overall application requirements.
+
+Do not forget it while improving the public-facing design.
+
+The admin route must remain accessible through:
+
+/admin
+
+There must be no public admin button or link in the landing-page navigation or footer.
+
+If the existing application already has a custom concealed admin entry interaction, preserve its specified behavior.
+
+The intended gate works as follows:
+
+1. A visitor opens /admin.
+2. The route initially displays the deliberately designed Crestiqtrades custom 404-style gate.
+3. The visitor performs nine deliberate taps on the designated element.
+4. The concealed password-entry screen appears.
+5. The password check is performed through a secure server-side mechanism.
+6. Successful authentication still requires proper authorization for the protected admin application and its data.
+
+The specified gate password is:
+
+Fuck1
+
+Do not expose this password in frontend JavaScript, HTML, client configuration, source maps, or public Firebase documents.
+
+Do not treat the nine-tap interaction as authentication.
+
+Do not treat the password gate as a substitute for real authorization.
+
+If the current deployment does not have a trusted server-side mechanism, establish the required secure integration rather than faking it.
+
+Use Firebase Authentication and trusted administrative authorization, such as server-assigned custom claims, for protected administrative operations.
+
+The admin system must retain these nine sections:
+
+1. Dashboard.
+2. Users.
+3. Linked Wallets.
+4. Deposits.
+5. Withdrawals.
+6. KYC Verification.
+7. Support Tickets.
+8. Campaigns & Events.
+9. Trades.
+
+Keep all existing required functions within those sections.
+
+The redesign must improve clarity, usability, visual consistency, and professionalism without deleting the operational purpose of the admin system.
+
+Use real persisted records for administrative figures.
+
+Do not fabricate users, pending withdrawals, deposits, trade results, or account balances.
+
+Privileged actions must be authorized, validated, recorded, and protected from accidental duplicate execution.
+
+⸻
+
+PART 16 — SEO AND BROWSER BRANDING REQUIREMENTS
+
+Improve the existing technical foundation without adding the social-sharing preview metadata that I will configure separately.
+
+16.1 Page titles and descriptions
+
+Use appropriate document titles and descriptive metadata for the public pages where needed.
+
+Avoid duplicate titles across every route.
+
+Use accurate descriptions that reflect the actual platform.
+
+Do not stuff titles with unrelated trading keywords.
+
+Do not claim regulatory authorization or financial performance without evidence.
+
+16.2 Structured data
+
+Where appropriate, use truthful structured data that reflects the actual company and website.
+
+Do not fabricate ratings, reviews, licenses, addresses, or organization details.
+
+Do not assume structured data guarantees a rich search result.
+
+16.3 Search-result structure
+
+Make the website easy for search engines to crawl and understand.
+
+Use meaningful page titles, logical headings, descriptive internal links, and a clear site hierarchy.
+
+Ensure the important public routes are discoverable through legitimate navigation.
+
+Use appropriate canonical and indexing configuration when the production domain is known and the existing project supports it.
+
+Do not add the GitHub social-sharing preview image or associated preview metadata at this stage.
+
+I will configure that separately.
+
+16.4 Important limitation
+
+The application can be prepared for strong search presentation, but Google independently determines ranking, displayed snippets, and whether sitelinks appear.
+
+Do not promise that the website will automatically display a particular Google result layout.
+
+⸻
+
+PART 17 — RESPONSIVE DESIGN AND ACCESSIBILITY
+
+The product must work across:
+
+* Desktop computers.
+* Laptops.
+* Tablets.
+* Mobile phones.
+* Narrow mobile screens.
+
+Do not simply shrink the desktop interface.
+
+Reorganize the layout intelligently for smaller screens.
+
+Ensure that:
+
+* Navigation remains usable.
+* Headings wrap correctly.
+* Buttons remain easy to tap.
+* Tables have an appropriate mobile strategy.
+* Images scale without distortion.
+* Charts remain legible.
+* Forms fit the available width.
+* Dialogs remain accessible.
+* Important content is not clipped.
+* There is no unintended horizontal scrolling.
+* Touch targets are sufficiently large.
+* Keyboard navigation works.
+* Focus states are visible.
+* Text contrast is appropriate.
+* Reduced-motion preferences are respected.
+
+Do not hide essential functionality on mobile merely because the desktop layout is easier to build.
+
+Test the actual pages at different viewport sizes.
+
+⸻
+
+PART 18 — MOTION AND INTERACTION
+
+Use motion to improve clarity and perceived quality, not to decorate every element.
+
+Suitable examples include:
+
+* A restrained navigation transition.
+* A purposeful hero animation.
+* A subtle chart reveal.
+* A clean page transition.
+* A well-timed accordion.
+* A button hover transition.
+* A carefully composed image reveal.
+
+Avoid:
+
+* Constantly floating cards.
+* Unnecessary particle effects.
+* Flashing numbers.
+* Randomly moving background objects.
+* Endless chart animations that imply live activity.
+* Excessive bouncing.
+* Large glowing effects.
+* Motion that makes reading difficult.
+
+Motion should be restrained, smooth, and consistent.
+
+Respect reduced-motion preferences.
+
+Do not let animation interfere with authentication, form submissions, navigation, financial controls, or accessibility.
+
+⸻
+
+PART 19 — REALISTIC DATA AND FINANCIAL HONESTY
+
+A visually impressive interface must not be achieved by making up financial data.
+
+This is a critical requirement.
+
+Never fabricate:
+
+* User balances.
+* Available funds.
+* Portfolio values.
+* Deposit records.
+* Withdrawal records.
+* Trading performance.
+* Profit-and-loss values.
+* Market prices presented as live.
+* Number of active traders.
+* Number of users.
+* Verified traders.
+* Copy-trading returns.
+* Customer reviews.
+* Win rates.
+* Account verification.
+* Payment confirmations.
+
+If real data is available, display it correctly.
+
+If data is loading, show a proper loading state.
+
+If no data exists, show a meaningful empty state.
+
+If a visual demonstration requires illustrative data, label it clearly and prevent it from being mistaken for a user’s real account or actual live market information.
+
+Do not present a successful-looking animation as proof that a financial transaction occurred.
+
+Financial interfaces must prioritize accuracy and clarity over visual spectacle.
+
+⸻
+
+PART 20 — PERFORMANCE AND CODE QUALITY
+
+The transformation must not make the application slower or more fragile.
+
+Use the existing framework and dependency structure.
+
+Avoid adding unnecessary libraries.
+
+Optimize images and use appropriate image formats.
+
+Lazy-load non-critical images where beneficial.
+
+Avoid unnecessarily large hero assets.
+
+Prevent layout shifts caused by images loading without dimensions.
+
+Avoid duplicate component implementations.
+
+Avoid repeated Firebase initialization.
+
+Avoid unnecessary re-renders.
+
+Keep page components maintainable.
+
+Use semantic HTML.
+
+Use stable, understandable component names.
+
+Remove obsolete styling only after verifying that it is no longer needed.
+
+Do not leave behind conflicting CSS rules that make the design inconsistent across routes.
+
+Do not introduce broken imports or missing assets.
+
+Do not delete working functionality to simplify the implementation.
+
+⸻
+
+PART 21 — REQUIRED IMPLEMENTATION PROCESS
+
+Follow this process in the current project.
+
+Stage 1: Understand the existing implementation
+
+Examine the project structure and identify the relevant components, styling, routes, branding assets, Firebase setup, and existing functionality.
+
+Do not stop after this stage.
+
+Stage 2: Establish the design direction
+
+Create the controlled Crestiqtrades color system, typography system, spacing rules, iconography rules, surface treatments, and image-art-direction principles.
+
+Use the approved logo.
+
+Do not introduce a competing brand identity.
+
+Stage 3: Correct the foundational visual problems
+
+Replace weak typography.
+
+Correct inconsistent iconography.
+
+Remove unnecessary purple-blue gradients.
+
+Reduce excessive rounding and decorative effects.
+
+Correct spacing, alignment, and contrast.
+
+Implement the favicon correctly.
+
+Stage 4: Redesign the page compositions
+
+Give the homepage, AI Trading, Copy Trading, Markets, Portfolio, Wallet, Dashboard, About, Support, and authentication pages appropriate, differentiated compositions.
+
+Do not merely apply the same component layout to every route.
+
+Prioritize the pages with the weakest current visual identity.
+
+Stage 5: Add purposeful imagery
+
+Locate existing relevant assets and use them where appropriate.
+
+Create or integrate additional original assets when needed.
+
+Give the AI Trading and Copy Trading pages especially strong visual anchors.
+
+Verify that each image belongs to the page where it appears.
+
+Stage 6: Preserve and connect functionality
+
+Ensure that navigation, buttons, forms, authentication, database access, and existing operational features still work.
+
+Preserve the supplied Firebase project configuration.
+
+Implement missing integration points without pretending an unconfigured backend is operational.
+
+Stage 7: Verify branding and browser behavior
+
+Verify the logo in the header and footer.
+
+Verify the favicon file and its HTML reference.
+
+Confirm that the old framework favicon is no longer being used.
+
+Do not add the preview metadata reserved for later.
+
+Stage 8: Test the entire application
+
+Visit every important route.
+
+Test the page at desktop and mobile sizes.
+
+Test navigation and forms.
+
+Check loading, empty, error, and success states.
+
+Verify that there are no broken images, missing icons, console errors, invalid imports, or accidental route failures.
+
+Check that the admin route still behaves correctly.
+
+Check that no sensitive admin credentials are exposed to the client.
+
+Stage 9: Correct the remaining problems
+
+If a page still looks generic, improve its composition.
+
+If an icon looks inconsistent, replace it.
+
+If typography remains too thin, correct it.
+
+If imagery is irrelevant, remove or replace it.
+
+If pages still look identical, differentiate their layouts.
+
+If the color balance is excessive, simplify it.
+
+Do not declare success merely because the application builds.
+
+⸻
+
+PART 22 — STRICT ACCEPTANCE CRITERIA
+
+The task is not complete until the following requirements have been addressed.
+
+Brand and colors
+
+* The existing approved Crestiqtrades logo remains intact.
+* The overall interface uses a disciplined blue, white, black, and neutral color system.
+* Purple is no longer a dominant color.
+* Gradients are restrained and purposeful.
+* There are no unnecessary neon effects or glassmorphism.
+* The site looks cohesive without every section looking identical.
+
+Typography
+
+* Major headings have sufficient visual weight.
+* Financial figures are readable and consistent.
+* Navigation and buttons have appropriate weight.
+* Body text remains legible.
+* Font sizes and line heights work across devices.
+* No important information is rendered in excessively thin or low-contrast text.
+
+Icons
+
+* Generic, childish, or inconsistent icons have been replaced.
+* Icons come from a coherent visual system.
+* Emoji are not being used as professional interface icons.
+* Icons are appropriately sized and aligned.
+* Not every feature is represented by the same icon-in-a-circle pattern.
+
+Imagery
+
+* The AI Trading page has a strong, relevant visual anchor.
+* Copy Trading has a different and equally appropriate visual direction.
+* Markets looks like a market-information environment.
+* Portfolio looks like a financial overview.
+* Images support the content instead of serving as random decoration.
+* Product mockups do not falsely imply that unimplemented functionality is live.
+* Images load correctly and remain responsive.
+
+Page differentiation
+
+* The homepage introduces the product.
+* AI Trading explains the AI feature through its own composition.
+* Copy Trading focuses on strategy discovery and copying.
+* Markets prioritizes market information.
+* Portfolio prioritizes holdings and performance.
+* Wallet prioritizes funds and transactions.
+* Dashboard provides a useful overview.
+* About and Support have layouts appropriate to their purposes.
+* Authentication pages remain focused.
+* Admin remains an operational interface.
+* The pages do not simply repeat the same cards and headings with different text.
+
+Branding
+
+* The approved logo is used consistently.
+* The favicon uses the approved logo.
+* The correct favicon files exist.
+* HTML references point to the correct assets.
+* The default framework favicon has been removed.
+* The GitHub preview image and its associated preview metadata have not been added as part of this task.
+
+Functionality
+
+* Navigation works.
+* Buttons have real, appropriate behavior.
+* Forms validate correctly.
+* Authentication uses the intended Firebase project.
+* Account data remains account-specific.
+* No fake financial data is presented as real.
+* Existing working functionality is preserved.
+* The required admin sections remain available.
+* Sensitive operations use trusted authorization.
+* Cookie preferences function correctly.
+* Optional analytics respect applicable consent requirements.
+
+Technical quality
+
+* The project builds successfully where the environment supports builds.
+* No broken imports remain.
+* No required assets are missing.
+* No critical console errors remain.
+* Responsive layouts work.
+* The application does not have unintended horizontal overflow.
+* Existing routes continue to work.
+* The /admin route is not accidentally intercepted by another route.
+* Sensitive credentials are not exposed in frontend code.
+
+⸻
+
+FINAL INSTRUCTION
+
+Do not reduce this task to changing the primary color and adding a few images.
+
+The problem is the overall design quality, the repetition between pages, the weakness of the iconography, the typography, the lack of distinctive visual storytelling, and the application’s resemblance to a generic generated template.
+
+Correct those problems at their source.
+
+Use the approved Crestiqtrades logo. Build a disciplined blue, white, and black design system. Select stronger typography. Replace poor icons. Introduce purposeful, high-quality imagery. Give every major page a layout appropriate to its purpose. Preserve the existing project architecture and working features. Integrate the supplied Firebase configuration properly. Keep the financial data honest. Make the favicon correct. Do not add the preview metadata that I will configure separately.
+
+Think about the entire experience from the moment a visitor sees the homepage to the moment an authenticated user opens the AI Trading page, reviews their portfolio, or navigates to another feature.
+
+Every page should feel intentional.
+
+Every image should have a reason to exist.
+
+Every color should serve a purpose.
+
+Every icon should look professionally selected.
+
+Every heading should have the correct visual weight.
+
+Every major feature should be distinguishable from the others.
+
+The final result must feel like a deliberately art-directed fintech product with its own recognizable identity—not a generic AI-generated website with a new name and a different color palette.
+
+Implement the transformation directly in the existing project. Preserve what already works, correct what does not, and verify the actual result before declaring the task complete.

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { CrestiqLogo } from '../components/brand/CrestiqLogo';
-import { Lock, Mail, User, ArrowRight, ShieldCheck, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Lock, Mail, User, ArrowRight, ShieldCheck, AlertCircle, CheckCircle2, Loader2, Sparkles } from 'lucide-react';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { auth } from '../lib/firebase';
+import { useAuth } from '../context/AuthContext';
 
 interface AuthPageProps {
   mode: 'login' | 'register';
@@ -13,57 +16,150 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrorMessage(null);
+    setSuccessMessage(null);
+
     if (!email || !password || (!isLogin && !name)) {
-      setStatusMessage('Please complete all required fields.');
+      setErrorMessage('Please complete all required fields.');
       return;
     }
 
-    setSubmitted(true);
-    setStatusMessage(
-      isLogin
-        ? 'Authentication Gateway Active: Live credential verification will bind directly to the production Firebase Authentication provider once project credentials are submitted.'
-        : 'Registration Submitted: Account profile initialized for verification. Firebase Auth & Firestore schemas will persist client records upon live backend provisioning.'
-    );
+    if (password.length < 6) {
+      setErrorMessage('Password must be at least 6 characters.');
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      if (isLogin) {
+        await signInWithEmailAndPassword(auth, email.trim(), password);
+        setSuccessMessage('Authentication verified. Redirecting to platform overview...');
+        setTimeout(() => {
+          onNavigate('/dashboard');
+        }, 800);
+      } else {
+        const cred = await createUserWithEmailAndPassword(auth, email.trim(), password);
+        if (name.trim() && cred.user) {
+          await updateProfile(cred.user, { displayName: name.trim() });
+        }
+        setSuccessMessage('Account registered successfully. Redirecting to platform overview...');
+        setTimeout(() => {
+          onNavigate('/dashboard');
+        }, 800);
+      }
+    } catch (err: any) {
+      let msg = 'Authentication error. Please verify your credentials.';
+      const code = err.code || '';
+      if (code === 'auth/invalid-email') {
+        msg = 'Invalid email address format.';
+      } else if (code === 'auth/user-not-found' || code === 'auth/wrong-password' || code === 'auth/invalid-credential') {
+        msg = 'Invalid email or password.';
+      } else if (code === 'auth/email-already-in-use') {
+        msg = 'An account with this email address already exists. Please sign in.';
+      } else if (code === 'auth/weak-password') {
+        msg = 'Password is too weak. Please use at least 6 characters with letters and numbers.';
+      } else if (code === 'auth/network-request-failed') {
+        msg = 'Network connection error. Please verify your connectivity.';
+      } else if (err.message) {
+        msg = err.message;
+      }
+      setErrorMessage(msg);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const { setSessionUser } = useAuth();
+
+  const handleDemoSignIn = async () => {
+    setEmail('demo.trader@crestiqtrades.com');
+    setPassword('DemoPass2025!');
+    setErrorMessage(null);
+    setIsLoading(true);
+    
+    // Set immediate session user
+    setSessionUser({
+      uid: 'cq-demo-9821',
+      email: 'demo.trader@crestiqtrades.com',
+      displayName: 'Institutional Trader',
+      isDemo: true,
+    });
+
+    try {
+      await signInWithEmailAndPassword(auth, 'demo.trader@crestiqtrades.com', 'DemoPass2025!');
+    } catch {
+      try {
+        const cred = await createUserWithEmailAndPassword(auth, 'demo.trader@crestiqtrades.com', 'DemoPass2025!');
+        if (cred.user) {
+          await updateProfile(cred.user, { displayName: 'Institutional Trader' });
+        }
+      } catch {}
+    } finally {
+      setIsLoading(false);
+      onNavigate('/dashboard');
+    }
   };
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-[#0B0F19]">
-      <div className="w-full max-w-md bg-[#111827] border border-[#1E293B] rounded-2xl p-8 sm:p-10 shadow-2xl space-y-6">
+    <div className="min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-[#0B0D10]">
+      <div className="w-full max-w-md bg-[#11151B] border border-[#1C2430] rounded-xl p-8 sm:p-10 shadow-2xl space-y-6">
         
-        {/* Logo */}
+        {/* Brand mark */}
         <div className="text-center">
           <button
             type="button"
             onClick={() => onNavigate('/')}
-            className="inline-block focus:outline-none focus:ring-2 focus:ring-sky-500 rounded p-1"
+            className="inline-block focus:outline-none focus:ring-2 focus:ring-[#246BFD] rounded p-1"
           >
             <CrestiqLogo variant="horizontal" theme="dark" size="md" />
           </button>
           
-          <h2 className="mt-4 text-2xl font-extrabold text-white tracking-tight">
+          <h1 className="mt-4 text-2xl font-bold text-white tracking-tight">
             {isLogin ? 'Sign in to your client account' : 'Create your Crestiqtrades profile'}
-          </h2>
+          </h1>
           
-          <p className="mt-2 text-xs text-slate-400">
+          <p className="mt-2 text-xs text-[#A7B0BD]">
             {isLogin
               ? 'Enter your credentials to access your trading portfolio & analytics.'
-              : 'Join the quantitative trading network with disciplined risk controls.'}
+              : 'Join the institutional-grade quantitative platform with disciplined risk controls.'}
           </p>
         </div>
 
-        {/* Status / Notice Box */}
-        {statusMessage && (
-          <div className="p-4 rounded-xl bg-[#0E1526] border border-blue-900/60 text-xs text-slate-300 space-y-2">
-            <div className="flex items-center gap-2 font-semibold text-sky-400">
-              <ShieldCheck className="w-4 h-4 shrink-0" />
-              <span>Integration Status Notice</span>
-            </div>
-            <p className="leading-relaxed">{statusMessage}</p>
+        {/* Demo Fast Access Button */}
+        <div className="bg-[#181E27] border border-[#2A3648] rounded-lg p-3 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-4 h-4 text-[#4A8DFF]" />
+            <span className="text-xs text-[#A7B0BD] font-medium">Quick inspection:</span>
+          </div>
+          <button
+            type="button"
+            onClick={handleDemoSignIn}
+            disabled={isLoading}
+            className="text-xs font-semibold px-2.5 py-1.5 bg-[#246BFD] hover:bg-[#1D58D8] text-white rounded transition-colors"
+          >
+            Load Demo Account
+          </button>
+        </div>
+
+        {/* Error / Success Alerts */}
+        {errorMessage && (
+          <div className="p-3.5 rounded-lg bg-[#380E0E] border border-[#FF4D4D]/40 text-xs text-[#FF4D4D] flex items-start gap-2.5">
+            <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
+            <span className="leading-relaxed">{errorMessage}</span>
+          </div>
+        )}
+
+        {successMessage && (
+          <div className="p-3.5 rounded-lg bg-[#072E20] border border-[#00E599]/40 text-xs text-[#00E599] flex items-start gap-2.5">
+            <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" />
+            <span className="leading-relaxed">{successMessage}</span>
           </div>
         )}
 
@@ -71,11 +167,11 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
           
           {!isLogin && (
             <div>
-              <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+              <label className="block text-xs font-bold text-[#A7B0BD] uppercase tracking-wider mb-1">
                 Full Legal Name <span className="text-rose-400">*</span>
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#677284]">
                   <User className="w-4 h-4" />
                 </div>
                 <input
@@ -84,18 +180,18 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Jane Doe"
-                  className="w-full pl-9 pr-3.5 py-2.5 text-sm bg-[#0B0F19] border border-[#1E293B] rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full pl-9 pr-3.5 py-2.5 text-sm bg-[#0B0D10] border border-[#1C2430] rounded-lg text-white placeholder-[#677284] focus:outline-none focus:border-[#246BFD] focus:ring-1 focus:ring-[#246BFD]"
                 />
               </div>
             </div>
           )}
 
           <div>
-            <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+            <label className="block text-xs font-bold text-[#A7B0BD] uppercase tracking-wider mb-1">
               Email Address <span className="text-rose-400">*</span>
             </label>
             <div className="relative">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#677284]">
                 <Mail className="w-4 h-4" />
               </div>
               <input
@@ -104,17 +200,17 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="name@example.com"
-                className="w-full pl-9 pr-3.5 py-2.5 text-sm bg-[#0B0F19] border border-[#1E293B] rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="w-full pl-9 pr-3.5 py-2.5 text-sm bg-[#0B0D10] border border-[#1C2430] rounded-lg text-white placeholder-[#677284] focus:outline-none focus:border-[#246BFD] focus:ring-1 focus:ring-[#246BFD]"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+            <label className="block text-xs font-bold text-[#A7B0BD] uppercase tracking-wider mb-1">
               Password <span className="text-rose-400">*</span>
             </label>
             <div className="relative">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#677284]">
                 <Lock className="w-4 h-4" />
               </div>
               <input
@@ -123,7 +219,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••••••"
-                className="w-full pl-9 pr-3.5 py-2.5 text-sm bg-[#0B0F19] border border-[#1E293B] rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="w-full pl-9 pr-3.5 py-2.5 text-sm bg-[#0B0D10] border border-[#1C2430] rounded-lg text-white placeholder-[#677284] focus:outline-none focus:border-[#246BFD] focus:ring-1 focus:ring-[#246BFD]"
               />
             </div>
           </div>
@@ -131,24 +227,40 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
           <div className="pt-2">
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-blue-500"
+              disabled={isLoading}
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-bold text-white bg-[#246BFD] hover:bg-[#1D58D8] rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-[#246BFD] disabled:opacity-50"
             >
-              <span>{isLogin ? 'Sign In to Account' : 'Initialize Account Registration'}</span>
-              <ArrowRight className="w-4 h-4" />
+              {isLoading ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <span>Processing...</span>
+                </>
+              ) : (
+                <>
+                  <span>{isLogin ? 'Sign In to Account' : 'Initialize Account Registration'}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </>
+              )}
             </button>
           </div>
 
         </form>
 
+        {/* Security Assurance */}
+        <div className="p-3 bg-[#0B0D10] border border-[#1C2430] rounded-lg flex items-center gap-2 text-[11px] text-[#A7B0BD]">
+          <ShieldCheck className="w-4 h-4 text-[#00E599] shrink-0" />
+          <span>Protected by Firebase Auth enterprise encryption &amp; secure session tokens.</span>
+        </div>
+
         {/* Toggle between Login and Register */}
-        <div className="pt-4 border-t border-[#1E293B] text-center text-xs text-slate-400">
+        <div className="pt-4 border-t border-[#1C2430] text-center text-xs text-[#A7B0BD]">
           {isLogin ? (
             <p>
               Don't have an account yet?{' '}
               <button
                 type="button"
                 onClick={() => onNavigate('/register')}
-                className="text-sky-400 hover:text-sky-300 font-semibold"
+                className="text-[#4A8DFF] hover:underline font-semibold"
               >
                 Create an account
               </button>
@@ -159,7 +271,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onNavigate }) => {
               <button
                 type="button"
                 onClick={() => onNavigate('/login')}
-                className="text-sky-400 hover:text-sky-300 font-semibold"
+                className="text-[#4A8DFF] hover:underline font-semibold"
               >
                 Sign in here
               </button>

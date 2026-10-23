@@ -1,51 +1,59 @@
 /**
  * Crestiqtrades Design System Tokens
- * Deliberate, institutional aesthetic: NO GLASSMORPHISM.
- * Deep obsidian navy, precision cobalt & teal accents, solid surfaces, crisp architectural borders.
+ * Deliberate, institutional fintech aesthetic: NO GLASSMORPHISM.
+ * Palette: Controlled blue, white, and black:
+ *   #0B0D10 primary dark canvas
+ *   #11151B secondary dark cards & surfaces
+ *   #181E27 elevated surface & modal frames
+ *   #246BFD primary blue
+ *   #4A8DFF supporting blue
+ *   #FFFFFF / #F5F7FA clean whites
+ *   #A7B0BD secondary text
+ *   #677284 muted tertiary text
+ *   #00E599 restrained positive / #FF4D4D restrained negative
  */
 
 export const tokens = {
   colors: {
     brand: {
-      deep: '#0B0F19', // Main dark canvas
-      surface: '#111827', // Primary solid cards
-      surfaceElevated: '#161F33', // Elevated interactive panels
-      surfaceHover: '#1E293B',
-      borderSubtle: '#1E293B',
-      borderProminent: '#334155',
-      primaryBlue: '#2563EB',
-      primaryDarkBlue: '#1D4ED8',
-      cyanAccent: '#0284C7',
-      tealAccent: '#0D9488',
-      lightTeal: '#14B8A6',
+      deep: '#0B0D10', // Primary dark canvas
+      surface: '#11151B', // Secondary dark cards
+      surfaceElevated: '#181E27', // Elevated interactive panels & modal surfaces
+      surfaceHover: '#1F2733',
+      borderSubtle: '#1C2430',
+      borderProminent: '#2A3648',
+      primaryBlue: '#246BFD',
+      supportingBlue: '#4A8DFF',
+      blueTint: '#12234A',
     },
     text: {
-      primary: '#F8FAFC',
-      secondary: '#94A3B8',
-      muted: '#64748B',
-      inverted: '#0F172A',
+      primary: '#FFFFFF',
+      soft: '#F5F7FA',
+      secondary: '#A7B0BD',
+      muted: '#677284',
+      inverted: '#0B0D10',
     },
     status: {
-      success: '#10B981',
-      successSurface: '#064E3B',
-      warning: '#F59E0B',
-      warningSurface: '#78350F',
-      danger: '#EF4444',
-      dangerSurface: '#7F1D1D',
-      info: '#0284C7',
+      success: '#00E599',
+      successSurface: '#072E20',
+      warning: '#F5A623',
+      warningSurface: '#332305',
+      danger: '#FF4D4D',
+      dangerSurface: '#380E0E',
+      info: '#246BFD',
     },
     light: {
       background: '#FFFFFF',
-      surface: '#F8FAFC',
+      surface: '#F5F7FA',
       border: '#E2E8F0',
-      textPrimary: '#0F172A',
-      textSecondary: '#475569',
-      textMuted: '#64748B',
+      textPrimary: '#0B0D10',
+      textSecondary: '#4A5568',
+      textMuted: '#718096',
     }
   },
   typography: {
-    fontSans: "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif",
-    fontMono: "'JetBrains Mono', monospace",
+    fontSans: "'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    fontMono: "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
   },
   layout: {
     maxWidth: '1280px',
