@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="crest-app-g1" x1="60" y1="440" x2="420" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E40AF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="crest-app-g2" x1="120" y1="400" x2="440" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <!-- Background Solid Deep Foundation -->
+  <rect width="512" height="512" rx="112" fill="#0B0F19" />
+  <rect x="2" y="2" width="508" height="508" rx="110" stroke="#1E293B" stroke-width="4" />
+  
+  <!-- Outer Hexagonal Crest Frame -->
+  <path d="M256 70L416 166V358L256 454L96 358V166L256 70Z" stroke="#334155" stroke-width="16" stroke-linejoin="round" />
+  
+  <!-- Left Facet -->
+  <path d="M150 310L256 130V370L150 310Z" fill="url(#crest-app-g1)" />
+  <!-- Right Facet -->
+  <path d="M362 310L256 130V370L362 310Z" fill="url(#crest-app-g2)" opacity="0.95" />
+  <!-- Nexus Cap -->
+  <path d="M256 130L310 205H202L256 130Z" fill="#38BDF8" />
+  <!-- Precision Needle -->
+  <path d="M256 130V400" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+  <circle cx="256" cy="130" r="18" fill="#FFFFFF" />
+</svg>

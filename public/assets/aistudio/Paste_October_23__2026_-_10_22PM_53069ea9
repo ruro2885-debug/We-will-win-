@@ -1,0 +1,1543 @@
+CRESTIQTRADES — MASTER PROJECT FOUNDATION, BRAND IDENTITY, AND LANDING PAGE IMPLEMENTATION
+
+CRITICAL MUST-FOLLOW TASKS
+
+You are building Crestiqtrades, a new, professionally designed AI-powered trading platform. You must approach this as a serious product-development assignment involving brand identity, visual design, website architecture, functionality, accessibility, responsive behaviour, SEO, privacy, and future application infrastructure.
+
+This is not a request to generate a generic trading website, a dashboard template, or a visually impressive but nonfunctional demonstration.
+
+The objective is to establish a distinctive brand and implement an exceptional, production-quality landing page while laying the correct foundation for the complete Crestiqtrades application.
+
+The project must be approached with the attention to detail expected from a professional brand designer, senior frontend engineer, product designer, accessibility specialist, and SEO engineer working together.
+
+The landing page is our first implementation stage. It is not the entire application, and it must not replace, cancel, or cause the omission of any other requirements in this specification.
+
+Read the entire specification before implementing anything. Resolve the requirements into a coherent project structure and execute them without silently dropping features.
+
+Do not replace concrete requirements with generic statements such as “make the design modern,” “ensure responsiveness,” or “add security.” Implement the actual behaviour and design described below.
+
+⸻
+
+1. PROJECT IDENTITY
+
+The official product name is:
+
+Crestiqtrades
+
+Use this spelling consistently throughout the application.
+
+Do not rename the product, introduce another company name, retain branding from a previous project, or generate alternative brand names.
+
+Crestiqtrades is intended to be an AI-powered trading platform with customer-facing trading functionality and a dedicated administrative environment.
+
+Its planned capabilities include AI trading, copy trading, markets, portfolios, wallets, account management, and transaction-related functionality.
+
+The actual functionality of each feature must be represented honestly. Do not claim that a feature executes live trades, connects to an exchange, generates profits, or manages customer funds unless the relevant capability has genuinely been implemented and verified.
+
+The initial objective is to establish the brand, website, landing page, legal and company-information structure, cookie-consent experience, and application foundation.
+
+The Firebase project configuration will be provided separately at a later stage. Do not fabricate Firebase credentials, invent a project ID, or pretend that Firebase has already been connected.
+
+Prepare the application for that integration without making up configuration values.
+
+Primary objective
+
+Create a distinctive, beautiful, polished, responsive trading-platform website that feels deliberately designed rather than generated from a generic template.
+
+The result must be visually compelling on mobile devices and desktop browsers.
+
+Every element must have a purpose, every section must belong to the same design system, and every important interaction must work.
+
+⸻
+
+2. DESIGN DIRECTION: NO GLASSMORPHISM
+
+This requirement is mandatory.
+
+Do not use glassmorphism anywhere in the design.
+
+Specifically, avoid:
+
+* Frosted-glass interface panels.
+* Excessive backdrop blur.
+* Translucent glass cards.
+* Floating transparent dashboard widgets.
+* Glass-like navigation bars.
+* Layers of semi-transparent panels used to imitate luxury.
+* Neon futuristic interfaces.
+* Unnecessary glowing borders.
+* Excessive gradients that compete with the content.
+* Generic AI-generated trading dashboard aesthetics.
+* Random floating decorations.
+* Unnecessary animated particles.
+* Overloaded interfaces filled with decorative statistics.
+* Excessive rounded cards that make every section look identical.
+
+Do not interpret “premium” as “add a dark background, gold gradients, glowing buttons, and glass cards.”
+
+Premium design requires deliberate composition, excellent typography, strong visual hierarchy, appropriate whitespace, consistent spacing, quality imagery, restrained colour usage, and careful attention to detail.
+
+Visual references
+
+Use the supplied reference screenshots and screen recording as references for quality, structure, and inspiration.
+
+The first reference demonstrates the search-result presentation of Binance, including the brand name, page title, descriptive text, and additional links underneath the main result.
+
+The second reference demonstrates a trading-related website and a cookie-consent interface with a clear heading, explanatory text, and three prominent actions.
+
+Study these references for their information hierarchy, clarity, content organisation, and usability.
+
+Do not reproduce their interfaces pixel for pixel.
+
+Do not copy their logos, trademarks, wording, or proprietary visual identity.
+
+Crestiqtrades must have its own recognisable identity.
+
+Use other established trading platforms, financial websites, and premium SaaS websites as quality benchmarks where appropriate. The goal is to learn from professional design conventions, not to clone an existing company.
+
+Overall visual principles
+
+Build a coherent visual language with:
+
+* Strong typographic hierarchy.
+* A deliberate brand colour palette.
+* Beautifully composed hero sections.
+* Clear navigation.
+* Consistent alignment.
+* Balanced whitespace.
+* High-quality, relevant visual assets.
+* Precise button sizing.
+* Consistent spacing and component proportions.
+* Carefully designed responsive layouts.
+* Subtle, purposeful interaction feedback.
+* Clear separation between sections.
+* Appropriate contrast between primary and secondary content.
+
+Do not force every section into a card.
+
+Use full-width content sections, carefully composed grids, typography-led layouts, image-and-text compositions, and other suitable structures where they improve the result.
+
+The website must look professionally art-directed.
+
+Colour palette
+
+Develop a distinctive palette for Crestiqtrades before implementing the page.
+
+Do not blindly copy the colours of Binance or the supplied reference website.
+
+Choose a restrained, sophisticated palette appropriate for a professional AI trading brand. Define the primary colour, secondary colour, accent colour, backgrounds, text colours, border colours, success states, warning states, and error states.
+
+Document the selected palette in the application’s design tokens so that the same colours are reused consistently.
+
+Avoid introducing unrelated colours in individual sections.
+
+Any colour used for trading-related indicators must have sufficient contrast and must not be the only way information is communicated.
+
+The completed page should look cohesive, polished, and unmistakably associated with Crestiqtrades.
+
+⸻
+
+3. CREATE A DISTINCTIVE CRESTIQTRADES LOGO
+
+The logo is a core deliverable, not a minor finishing detail.
+
+Do not postpone it until the website is complete.
+
+Do not substitute a generic icon, emoji, ordinary letter inside a circle, or an unrelated stock symbol for the actual brand identity.
+
+Do not merely display the text “Crestiqtrades” and call it a logo.
+
+Create a distinctive visual identity specifically for Crestiqtrades.
+
+Brand mark requirements
+
+Develop an original, professionally composed symbol that can function independently of the wordmark.
+
+Explore a meaningful visual direction connected to precision, market intelligence, strategic thinking, technology, or upward progress.
+
+These are creative directions, not instructions to combine every possible trading symbol into one design.
+
+Avoid clichéd combinations of dollar signs, candlesticks, arrows, robot heads, coins, and generic AI circuit graphics.
+
+The final mark should have a recognisable silhouette, balanced proportions, clean geometry, and enough simplicity to remain identifiable at small sizes.
+
+Do not produce an unnecessarily complicated illustration that becomes illegible when reduced.
+
+Wordmark requirements
+
+Create a proper Crestiqtrades wordmark using carefully selected typography and appropriate letter spacing.
+
+The symbol and wordmark must work together as one identity.
+
+Ensure the complete brand name remains readable and correctly spelled.
+
+The logo must not be distorted, stretched, clipped, or displayed at an inappropriate size.
+
+Required brand assets
+
+Create and include actual reusable assets for:
+
+1. Primary horizontal logo.
+2. Standalone brand symbol.
+3. Light-background logo variant.
+4. Dark-background logo variant.
+5. Browser favicon.
+6. Appropriate square app icon.
+7. Any necessary simplified small-size mark.
+
+Use vector assets such as SVG where appropriate so the logo remains crisp at different sizes.
+
+The favicon must be an actual icon asset, not an emoji or a text-only placeholder.
+
+Logo implementation
+
+The correct logo must appear wherever the brand identity is needed, including:
+
+* Landing-page header.
+* Footer.
+* Authentication pages when implemented.
+* Customer dashboard when implemented.
+* Appropriate application loading states.
+* Browser favicon.
+* Any relevant branded system pages.
+
+Do not create multiple inconsistent logos for different pages.
+
+The website must load the correct favicon through the HTML document metadata and reference an asset that actually exists.
+
+Check the generated file paths, filenames, MIME types, and browser-facing references.
+
+The logo and favicon must remain part of the project when the application is built, exported, or deployed.
+
+Do not leave behind temporary logos, broken image paths, or missing assets.
+
+⸻
+
+4. ESTABLISH A CONSISTENT DESIGN SYSTEM
+
+Before composing the page, establish reusable design tokens and components.
+
+Define consistent values for:
+
+* Brand colours.
+* Typography.
+* Font weights.
+* Heading sizes.
+* Body-text sizes.
+* Line heights.
+* Letter spacing.
+* Spacing scale.
+* Page gutters.
+* Content maximum widths.
+* Section spacing.
+* Border styles.
+* Border radii.
+* Shadows.
+* Button heights.
+* Input heights.
+* Breakpoints.
+* Focus indicators.
+* Motion durations.
+* Disabled states.
+* Hover states.
+* Error states.
+* Success states.
+
+Use a consistent spacing system instead of selecting arbitrary margins and padding for each section.
+
+Use a consistent typography scale.
+
+Headings must have a clear hierarchy, body text must be readable, and navigation text must not be unnecessarily small.
+
+Do not use excessively large headings that push essential content off mobile screens without a deliberate design reason.
+
+Do not use too many font families.
+
+Choose appropriate fonts with good readability and reliable loading behaviour.
+
+Use reusable components for the header, footer, buttons, links, form controls, cookie preferences, and other shared elements.
+
+The same component must not behave differently on different pages without a valid reason.
+
+⸻
+
+5. LANDING PAGE: PRIMARY IMPLEMENTATION TARGET
+
+The landing page must be the first major deliverable.
+
+It must be complete, carefully designed, responsive, and ready to serve as the public entry point for Crestiqtrades.
+
+Do not create a bare homepage containing only a logo, a headline, and a few buttons.
+
+Build a complete marketing website with a deliberate content hierarchy.
+
+Do not cram every feature into the first screen.
+
+Do not place buttons randomly across the interface.
+
+Every section must connect naturally to the section before it and lead the visitor toward an appropriate next step.
+
+5.1 Header and navigation
+
+Create a polished, responsive header.
+
+The header must include the actual Crestiqtrades logo and a clear navigation structure.
+
+Possible navigation categories include:
+
+* Home.
+* Markets.
+* AI Trading.
+* Copy Trading.
+* About.
+* Support.
+
+Use the final page structure to determine the exact links and grouping.
+
+Do not expose every possible feature as an individual top-level navigation item if doing so creates clutter.
+
+Group related links logically.
+
+Provide a clearly visible primary call to action, such as “Get Started,” where appropriate.
+
+Provide an appropriate sign-in link for returning users.
+
+The public landing page must not display an administrator login button, administrator dashboard link, or visible administrative controls.
+
+Do not introduce unnecessary labels such as “Admin Portal,” “Special Client Desk,” “Authority Desk,” or similar invented interface elements.
+
+The customer-facing interface must remain customer-focused.
+
+Header behaviour
+
+* The logo must navigate to the homepage.
+* Every navigation link must lead to the correct destination.
+* The active navigation state must be appropriate to the current page.
+* The header must remain usable on mobile.
+* If a mobile navigation menu is required, it must open and close correctly.
+* The menu must support keyboard navigation.
+* Clicking outside the menu should close it when appropriate.
+* Escape should close an open menu.
+* The menu must not obstruct important content unnecessarily.
+* Do not use a tall header that consumes most of a mobile screen.
+
+If a sticky header is used, implement it deliberately and ensure it does not cover page headings or anchor destinations.
+
+5.2 Hero section
+
+The hero section is one of the most important parts of the entire website.
+
+It must immediately communicate the Crestiqtrades brand, the platform’s purpose, and the value it offers.
+
+Develop an original headline, supporting copy, and clear calls to action.
+
+The headline should be concise, memorable, and professionally written.
+
+Avoid generic AI slogans such as “The future is here,” “Trade smarter, not harder,” or similar overused expressions unless there is a compelling, original reason to use them.
+
+The supporting text should explain the platform in plain language.
+
+It should accurately describe the role of AI in market analysis and trading-related workflows without making unsupported performance promises.
+
+The hero must have a strong visual focal point.
+
+Use a carefully composed visual asset, original brand graphic, relevant market visualisation, or another appropriate design element that complements the headline.
+
+Do not add unrelated decorative graphics merely to fill empty space.
+
+If a trading chart is shown, it must be visually credible and clearly presented as illustrative unless it is connected to genuine market data.
+
+Do not fabricate live prices, user balances, market movements, or performance statistics.
+
+Hero calls to action
+
+Provide a clear primary action and, if appropriate, a secondary action.
+
+Possible examples include:
+
+* Get Started.
+* Explore the Platform.
+* Discover AI Trading.
+
+Select the wording that best fits the final design.
+
+Do not create buttons that all lead to the same unrelated destination.
+
+If registration has not yet been connected, prepare the appropriate route or clearly defined integration point without pretending that account creation is already operational.
+
+5.3 Credibility and platform introduction
+
+Below the hero, introduce Crestiqtrades and explain what the platform offers.
+
+Use concise, informative copy and a well-composed layout.
+
+The section should help visitors understand the product without repeating the hero headline.
+
+Explain the relevant platform capabilities and how they fit together.
+
+Do not invent the number of customers, assets under management, trading volume, awards, ratings, or years of regulatory approval.
+
+The establishment year supplied by the company is 2022. This does not automatically establish that every current product feature existed in 2022.
+
+Do not fabricate customer testimonials or attribute statements to real people without evidence.
+
+If testimonials are not available, do not create fake testimonials to make the site look established.
+
+5.4 AI trading section
+
+Create a dedicated section introducing the AI trading capability.
+
+Explain what AI trading is, what the Crestiqtrades implementation is intended to do, and what users can expect from the actual feature.
+
+Use a suitable visual composition.
+
+If an illustrative interface is included, make it visually convincing without presenting invented results as genuine historical performance.
+
+The section must not claim guaranteed profits, risk-free trading, perfect predictions, or guaranteed win rates.
+
+If the trading engine has not yet been connected, describe the capability accurately without pretending that a live trading system is operating.
+
+Provide an appropriate route or call to action for learning more.
+
+5.5 Copy trading section
+
+Create a separate section explaining copy trading.
+
+Describe the feature accurately and make clear what it is intended to allow users to do once implemented.
+
+Use a different layout from the AI trading section so the page does not become a repetitive stack of identical cards.
+
+Do not invent trader rankings, returns, follower counts, or performance histories.
+
+If the feature is not yet connected to real trader data, do not display fabricated live rankings or imply that the displayed results are real.
+
+5.6 Markets section
+
+Create an attractive introduction to the market-related functionality.
+
+The design may include categories such as forex, cryptocurrencies, commodities, indices, or other markets if those categories are genuinely supported or planned for the product.
+
+Do not represent a category as currently available if it has not been implemented.
+
+If market prices are displayed, they must come from a verified data source once integration is available.
+
+If verified market data is not yet available, use clearly labelled illustrative examples or present market categories without fabricated live prices.
+
+Do not introduce randomly changing numbers to make the page appear active.
+
+5.7 Platform features
+
+Present the important platform capabilities in a visually varied, well-organised section.
+
+Relevant capabilities may include:
+
+* AI-assisted market analysis.
+* Trading tools.
+* Copy trading.
+* Portfolio monitoring.
+* Wallet functionality.
+* Transaction records.
+* Account management.
+* Customer support.
+
+Use only appropriate descriptions and avoid promising functionality that does not exist.
+
+Do not give every feature an oversized, identical card.
+
+Use a carefully designed combination of typography, spacing, illustrations, and layouts.
+
+Each feature should have a concise explanation and a meaningful destination when a corresponding page exists.
+
+5.8 How it works
+
+Create a clear section explaining the intended customer journey.
+
+For example, the sequence may cover:
+
+1. Creating an account.
+2. Exploring the platform.
+3. Accessing available trading tools.
+4. Managing account activity.
+
+Adapt the exact steps to the capabilities that will actually be implemented.
+
+Do not imply that users can trade, deposit, withdraw, or connect wallets before those features are operational.
+
+Keep the explanation straightforward and visually attractive.
+
+5.9 Risk awareness
+
+Trading involves financial risk.
+
+Include an appropriately written risk statement in a suitable location on the landing page.
+
+The risk statement must not be buried so deeply in the page that visitors cannot find it.
+
+Do not suggest that AI eliminates market risk.
+
+Do not promise profits or describe the platform as risk-free.
+
+Provide a link to the full Risk Disclosure page.
+
+The final wording must accurately reflect the actual nature of the product.
+
+5.10 Frequently asked questions
+
+Include a well-designed FAQ section that answers relevant questions.
+
+Possible topics include:
+
+* What is Crestiqtrades?
+* What is AI trading?
+* How does copy trading work?
+* How do users create an account?
+* What markets are supported?
+* How can users obtain assistance?
+* What are the risks of trading?
+* How is personal information handled?
+
+Only include answers that can be stated accurately.
+
+Do not use FAQs to make unsupported claims about licensing, security certifications, guaranteed returns, or account protections.
+
+Implement the FAQ interactions correctly.
+
+If accordion-style questions are used, keyboard and screen-reader users must be able to operate them.
+
+5.11 Final call to action
+
+Create a strong closing section that encourages visitors to take an appropriate next step.
+
+Use the same brand identity and visual language as the rest of the page.
+
+Do not introduce an entirely unrelated design at the bottom.
+
+The call to action must lead to a real destination or a clearly defined route.
+
+5.12 Footer
+
+Create a complete, professionally organised footer.
+
+It must contain the Crestiqtrades logo and appropriate company information.
+
+Organise the footer into logical groups rather than displaying one enormous row of unrelated links.
+
+Possible groups include:
+
+Platform
+
+* AI Trading.
+* Copy Trading.
+* Markets.
+* Platform Features.
+
+Company
+
+* About Our Company.
+* Contact.
+* Support.
+
+Legal
+
+* Privacy Policy.
+* Terms and Conditions.
+* Risk Disclosure.
+* Cookie Policy.
+
+Account
+
+* Sign In.
+* Create Account, where implemented.
+
+Include the company’s established year of 2022 where appropriate.
+
+Do not invent a physical office address, telephone number, email address, registration number, regulatory licence, or social media account.
+
+If a required company contact detail has not yet been provided, keep it configurable and do not publish an invented value.
+
+The footer must work well on mobile, with sensible grouping, readable text, and no horizontal overflow.
+
+⸻
+
+6. ABOUT OUR COMPANY
+
+Create a dedicated About page and include a suitable introduction to the company on the landing page.
+
+The company information supplied for this project includes:
+
+Official company/product name: Crestiqtrades.
+
+Established: 2022.
+
+Use the establishment year accurately.
+
+Do not invent a founder’s identity, employee count, physical headquarters, incorporation status, company registration number, or history of achievements.
+
+The About page should explain the purpose of the platform, its intended users, its approach to AI-assisted trading, and its product philosophy.
+
+Use clear, professional language.
+
+Avoid exaggerated claims such as “the world’s number one AI trading company” unless they can be substantiated.
+
+The page should look like a natural part of the same website rather than an unrelated document.
+
+Include an appropriate route, page title, navigation path, and footer links.
+
+Do not leave the About link pointing to a blank page or a nonexistent route.
+
+⸻
+
+7. PRIVACY, TERMS, RISK DISCLOSURE, AND COOKIE POLICY
+
+These pages are mandatory components of the website.
+
+Create a coherent legal-information structure with dedicated routes and readable document layouts.
+
+Privacy Policy
+
+The Privacy Policy must explain the categories of personal information the platform actually collects, how it is used, how it is stored, who may process it, how long it is retained where applicable, and how users can exercise applicable privacy rights.
+
+The final policy must be aligned with the actual implementation, including the authentication provider, database, analytics tools, cookies, support systems, and other integrated services.
+
+Do not claim that the platform collects no information if the application collects registration, account, identity-verification, or transaction information.
+
+Do not invent third-party processors or make unverified claims about encryption and security certifications.
+
+Terms and Conditions
+
+Create a dedicated Terms and Conditions page.
+
+It should cover appropriate account responsibilities, permitted use, platform functionality, prohibited conduct, service availability, and other applicable provisions.
+
+Do not insert arbitrary legal clauses that contradict the actual product.
+
+The final terms should be reviewed for the jurisdictions in which the platform operates.
+
+Risk Disclosure
+
+Create a dedicated risk disclosure explaining the relevant risks of trading, including the possibility of financial loss and the limitations of AI-assisted analysis.
+
+Do not imply that AI predictions are certain.
+
+Cookie Policy
+
+Create a dedicated Cookie Policy explaining necessary cookies and any optional categories actually used by the website.
+
+Explain how users can manage their preferences and how the website respects their choices.
+
+All these pages must be linked appropriately from the footer and any relevant consent interface.
+
+Use readable typography, sensible content widths, clear headings, and consistent spacing.
+
+Do not create empty legal pages filled with generic placeholder text and call the task complete.
+
+Where exact legal or company details are unknown, clearly identify the information that needs to be supplied before production rather than inventing it.
+
+⸻
+
+8. CUSTOM COOKIE CONSENT INTERFACE
+
+Implement a custom cookie-consent experience inspired by the supplied second screenshot.
+
+The reference is for visual direction, not for exact copying.
+
+The interface must be polished, readable, responsive, accessible, and genuinely functional.
+
+8.1 Initial appearance
+
+On a user’s first visit, show a well-composed consent panel when appropriate.
+
+The panel should contain:
+
+Heading: We value your privacy.
+
+Explanation: Use concise, accurate wording explaining that the website uses necessary technologies and, where applicable, optional technologies for analytics and marketing. Explain that visitors can manage their preferences.
+
+Primary action: Accept All.
+
+Secondary action: Customize.
+
+Alternative action: Reject All.
+
+The three actions must be clearly visible without requiring the user to discover a hidden menu.
+
+Do not make the Reject All action deliberately difficult to find.
+
+Do not use manipulative wording or visual tricks to push users into accepting optional cookies.
+
+8.2 Visual styling
+
+Create a white or appropriately light consent panel with strong text contrast, polished typography, comfortable spacing, and carefully sized buttons.
+
+Use the selected Crestiqtrades design tokens.
+
+The panel should have deliberate proportions and a clear visual hierarchy.
+
+Avoid glassmorphism, excessive transparency, and unnecessary blur.
+
+On mobile, the panel must fit within the viewport and remain usable without hiding essential controls off-screen.
+
+On desktop, the panel must remain appropriately sized rather than stretching across the entire screen.
+
+Use a suitable overlay if necessary, without making the underlying interface look like a glassmorphism design.
+
+8.3 Accept All
+
+When the visitor selects Accept All:
+
+* Save the relevant consent preferences.
+* Record the consent categories and a suitable consent timestamp.
+* Update the consent state.
+* Close the panel.
+* Respect the saved choice on subsequent visits.
+* Enable only the optional technologies covered by the accepted categories and applicable consent requirements.
+
+Do not simply close the panel without saving the user’s choice.
+
+8.4 Reject All
+
+When the visitor selects Reject All:
+
+* Reject optional categories that are not necessary for the website to operate.
+* Keep only genuinely necessary technologies active.
+* Save the preference.
+* Close the panel.
+* Respect the choice on subsequent visits.
+
+Reject All must be a fully functional action, not a decorative button.
+
+8.5 Customize
+
+When the visitor selects Customize, open a dedicated preferences interface.
+
+Provide clear descriptions and appropriate controls for the cookie categories actually used.
+
+Potential categories include:
+
+* Necessary.
+* Analytics.
+* Marketing.
+
+The category list must match the website’s actual technology stack.
+
+Necessary cookies should be identified as essential and should not be presented as an optional category that can break the website when disabled.
+
+Optional categories must remain disabled until the applicable consent has been obtained.
+
+Provide a clear Save Preferences action.
+
+Provide an appropriate way to return to the original consent options.
+
+The preferences interface must work with keyboard navigation and assistive technologies.
+
+8.6 Persistence and consent management
+
+Persist consent choices across page navigation and subsequent visits.
+
+Use an appropriate storage mechanism for the website’s actual requirements.
+
+Do not depend solely on React component state, because component state alone will not persist after a reload.
+
+Version the consent configuration or otherwise provide a sensible way to request renewed consent when the policy or relevant technology changes materially.
+
+Provide a visible, accessible way to reopen cookie preferences later, such as a Cookie Settings link in the footer.
+
+Allow users to change their choices.
+
+Do not repeatedly show the initial consent panel after a valid choice unless renewed consent is genuinely required.
+
+8.7 Consent enforcement
+
+Do not load optional analytics or marketing scripts before the required consent has been obtained.
+
+Implement consent enforcement in the code that controls those integrations.
+
+Do not claim that a cookie banner is legally compliant merely because it contains three buttons.
+
+Ensure the implementation matches applicable privacy requirements and the website’s actual use of cookies and similar technologies.
+
+⸻
+
+9. GOOGLE SEARCH PRESENTATION AND SEO
+
+Crestiqtrades must be structured so that search engines can understand what the website is and which pages are important.
+
+The supplied Binance search screenshot illustrates the desired type of search presentation: a recognisable brand, a clear result title, descriptive text, and additional page links where Google chooses to show them.
+
+The goal is to make Crestiqtrades similarly clear and discoverable without copying Binance’s identity or wording.
+
+9.1 Homepage title
+
+Create a descriptive homepage title that includes the Crestiqtrades brand and accurately communicates the platform’s AI trading focus.
+
+Avoid keyword stuffing.
+
+Avoid exaggerated superlatives.
+
+Use a sensible title length and ensure the document title is correct on the homepage.
+
+9.2 Meta description
+
+Write an original, informative meta description.
+
+It should explain what Crestiqtrades offers and describe its relevant AI trading, market analysis, or trading-platform capabilities accurately.
+
+The description should read naturally.
+
+Do not use repeated keywords, empty marketing language, or unsupported claims.
+
+Do not copy Binance’s search-result description.
+
+9.3 Page-specific metadata
+
+Create appropriate titles and descriptions for the important pages, including:
+
+* Home.
+* About.
+* Markets.
+* AI Trading.
+* Copy Trading.
+* Support.
+* Privacy Policy.
+* Terms and Conditions.
+* Risk Disclosure.
+* Cookie Policy.
+
+Only create indexable pages that actually exist and have meaningful content.
+
+Configure appropriate canonical URLs when the final production domain is known.
+
+Do not invent a domain name.
+
+9.4 Sitelinks and internal structure
+
+Google determines whether and which sitelinks appear in search results.
+
+Do not promise that specific sitelinks will appear.
+
+Instead, build a clear, logical website structure that helps Google discover important pages.
+
+Requirements include:
+
+* Descriptive navigation links.
+* Meaningful page titles.
+* Clear internal linking.
+* Correct heading hierarchy.
+* Crawlable links.
+* Consistent branding.
+* A useful homepage.
+* Appropriate indexability.
+* No unnecessary duplicate pages.
+
+Important destinations should be reachable through genuine navigation rather than existing only inside inaccessible interface states.
+
+9.5 Technical SEO
+
+Implement the appropriate technical foundations:
+
+* Valid page titles.
+* Meta descriptions.
+* Canonical URL support.
+* Appropriate robots directives.
+* XML sitemap generation.
+* A robots.txt file.
+* Correct heading hierarchy.
+* Descriptive link text.
+* Useful image alternative text.
+* Appropriate social-sharing metadata.
+* Correct favicon declarations.
+* Suitable structured data where supported by genuine information.
+
+Use structured data only when it accurately describes the actual business and website.
+
+Do not invent ratings, reviews, addresses, company registrations, licences, or awards.
+
+Do not mark fabricated testimonials as genuine reviews.
+
+Avoid structured-data markup that misrepresents the service.
+
+Ensure the sitemap does not advertise nonexistent routes.
+
+The website must remain accessible to search engine crawlers where indexing is intended.
+
+Do not accidentally apply noindex to the entire public website.
+
+9.6 Search-result honesty
+
+Do not attempt to make Crestiqtrades appear to be Binance or another established company.
+
+Do not use misleading metadata, competitor trademarks, or unrelated keywords to manipulate search results.
+
+The website should be recognisable as Crestiqtrades.
+
+⸻
+
+10. COMPLETE APPLICATION REQUIREMENTS — PRESERVE THESE FROM THE START
+
+Although the landing page is the first implementation target, the project is intended to become a complete application.
+
+Do not create a structure that makes the planned customer and administrative features difficult to implement later.
+
+Do not silently remove these requirements from the project architecture.
+
+Customer-facing application
+
+The planned customer application must account for:
+
+* Registration.
+* Login.
+* Individual user profiles.
+* Account settings.
+* Customer dashboard.
+* Markets.
+* Trading.
+* AI Trading.
+* Copy Trading.
+* Portfolio.
+* Wallet.
+* Deposits.
+* Withdrawals.
+* Transaction History.
+* Customer Support.
+
+Each feature must eventually have a meaningful route or interface.
+
+Do not create a large collection of unrelated placeholder pages.
+
+Prepare the application architecture so that authentication, user data, trading-related records, and account operations can be integrated properly.
+
+The landing page should link to appropriate public destinations, and authenticated features should require the relevant access controls when implemented.
+
+Do not expose private account information through public routes.
+
+Do not create fake customer accounts, fabricated transaction histories, or random account balances.
+
+Authentication
+
+The eventual application must authenticate real registered accounts through the configured authentication provider.
+
+Do not invent a successful login session when authentication fails.
+
+Do not expose one user’s information to another user.
+
+Do not implement frontend-only authentication that grants access based on a locally stored boolean or an unverified user-controlled value.
+
+Once Firebase is configured, use its authentication and the appropriate authorization controls.
+
+Until that configuration is supplied, do not pretend that production authentication is connected.
+
+⸻
+
+11. ADMINISTRATOR ACCESS — MANDATORY PROJECT REQUIREMENT
+
+The administrator interface is part of the complete Crestiqtrades project and must not be forgotten during the landing-page implementation.
+
+The public website must not contain a visible admin login button or public navigation link to the administrative dashboard.
+
+The dedicated administrator entry route is:
+
+/admin
+
+The intended entry experience is a concealed administrator interface reached through a custom 404 page.
+
+11.1 Custom 404 page at /admin
+
+When an ordinary visitor navigates to /admin, display a beautiful, custom-designed 404-style page.
+
+This page must not look like a default framework error, browser error, or unfinished template.
+
+Create a distinctive, polished composition using the Crestiqtrades design system.
+
+It must be visually consistent with the brand while remaining clearly different from the public landing page.
+
+The page should feel intentional, refined, and professionally designed.
+
+Do not add an obvious administrator login link.
+
+Do not display the administrator password.
+
+Do not expose administrative navigation or controls.
+
+Do not add invented labels such as “Special Client Desk” or “Authority Desk.”
+
+11.2 Nine-tap interaction
+
+The custom 404 page must respond to nine deliberate taps on the designated interactive area.
+
+After the ninth valid tap, reveal the concealed administrator password-entry interface.
+
+Implement the interaction carefully:
+
+* Count deliberate taps on the intended element.
+* Do not count unrelated taps elsewhere on the page.
+* Reset the count after a full page reload.
+* Reset the count when the user leaves the entry page.
+* Prevent accidental double counting caused by overlapping click and touch handlers.
+* Make the interaction work on touch devices and desktop browsers.
+* Avoid intrusive alerts.
+* Reveal the password interface through a polished transition.
+* Keep the interaction separate from the security verification process.
+
+Do not let the nine-tap interaction itself grant administrative access.
+
+11.3 Password-entry interface
+
+The specified password is:
+
+Fuck1
+
+Preserve its exact spelling and capitalization.
+
+The password interface must include a properly labelled password field and a clear submission action.
+
+Provide an appropriate error state for invalid credentials.
+
+Do not reveal whether an account exists or expose sensitive authentication information.
+
+The administrator must not gain access merely because the concealed interface has been revealed.
+
+11.4 Actual administrator authentication
+
+The password must not be embedded in public frontend JavaScript, HTML, client-side environment variables, or publicly downloadable configuration.
+
+Do not implement a frontend-only comparison against the password.
+
+The password must be verified through a secure server-side authentication mechanism or another properly protected server-side implementation.
+
+Use an appropriate protected configuration mechanism for the credential.
+
+The actual administrator session must be verified on protected requests.
+
+Apply authorization checks to administrative APIs and database operations.
+
+A user must not be able to bypass the authentication screen by manually navigating to an internal admin route.
+
+Do not assume that hiding the route provides security.
+
+Do not treat the nine-tap interaction as an authentication factor.
+
+Apply appropriate session management, rate limiting or equivalent abuse protection, and secure credential handling.
+
+When Firebase is configured, use the appropriate authenticated administrator identity and authorization controls.
+
+The specified password is a project requirement, but it must not be stored insecurely in public code.
+
+If the current environment does not provide a suitable secure server-side mechanism, prepare the correct integration boundary and explicitly identify the remaining configuration required. Do not fake a secure authentication implementation.
+
+⸻
+
+12. ADMIN DASHBOARD — NINE REQUIRED SECTIONS
+
+The eventual administrator dashboard must contain these exact primary sections.
+
+Do not rename or omit them.
+
+1. Dashboard
+
+Provide an overview of actual platform activity, including relevant user counts, deposit totals, withdrawal totals, pending requests, KYC activity, support tickets, and trading activity.
+
+All statistics must come from appropriate persistent records.
+
+Do not use hardcoded financial totals or randomly generated activity.
+
+2. Users
+
+Provide account search, filtering, profile inspection, account status information, and appropriate account-management actions.
+
+Protect sensitive user information.
+
+Record important administrative actions.
+
+3. Linked Wallets
+
+Provide an appropriate view of user-linked wallet records, supported networks, connection status, and verification status where those features are genuinely implemented.
+
+Do not imply that wallet ownership has been verified when it has not.
+
+Do not expose private keys, seed phrases, or other wallet secrets.
+
+4. Deposits
+
+Provide deposit-request management, relevant transaction details, submitted evidence where applicable, status tracking, and authorized approval or rejection actions.
+
+Do not credit a user simply because a frontend status changes.
+
+Financial changes must be performed through properly authorized and auditable operations.
+
+5. Withdrawals
+
+Provide withdrawal-request management, destination details where appropriate, status tracking, and authorized processing actions.
+
+Implement the necessary checks before recording a withdrawal as completed.
+
+Do not claim that funds have been transferred when no actual transfer has occurred.
+
+6. KYC Verification
+
+Provide a secure review interface for identity-verification submissions.
+
+Support appropriate verification states, including pending, approved, rejected, and resubmission requested where applicable.
+
+Protect identity documents and restrict access to authorized personnel.
+
+Do not expose KYC documents through publicly accessible storage paths.
+
+7. Support Tickets
+
+Provide a support-ticket interface with ticket lists, individual conversations, replies, status management, and appropriate user associations.
+
+Ticket messages must persist.
+
+Do not create fake conversations to make the dashboard look active.
+
+8. Campaigns & Events
+
+Provide the structure for creating, editing, scheduling, publishing, and ending campaigns or events where the functionality is implemented.
+
+Validate relevant fields.
+
+Do not claim a campaign is published when it has not been saved successfully.
+
+9. Trades
+
+Provide an appropriate view of genuine trading records, including available open-trade and closed-trade information.
+
+Do not fabricate execution history, profit-and-loss figures, or market prices.
+
+Clearly distinguish simulated or paper-trading records from live trading records.
+
+Every administrative action must be authorized and important changes must be recorded.
+
+⸻
+
+13. FINANCIAL DATA AND PERSISTENCE
+
+The future platform must be designed around reliable, persistent, account-specific records.
+
+Do not use arbitrary local state as the authoritative source of financial information.
+
+Do not generate random balances to make the interface appear complete.
+
+Do not display a user’s balance based on another user’s data.
+
+Do not silently change balances during page refreshes or navigation.
+
+Do not credit a deposit multiple times because a request is repeated.
+
+Financial operations must use appropriate server-side validation, authorization, transaction handling, and duplicate-operation protection.
+
+Where applicable, maintain a transaction ledger that records the nature of each financial change.
+
+Administrative adjustments must include an audit record.
+
+A frontend success message must not be displayed before the underlying operation has actually succeeded.
+
+If the required backend is not yet configured, display an appropriate unavailable or unconfigured state rather than fabricated financial data.
+
+These are architectural requirements for the complete application. Do not invent a production financial backend while the necessary Firebase project details remain unavailable.
+
+⸻
+
+14. SUPPORT AND CONTACT INFORMATION
+
+Create a proper contact and support structure.
+
+The website must provide an appropriate way for visitors and customers to obtain assistance.
+
+Do not invent a company email address.
+
+Do not reuse contact information from an unrelated previous project.
+
+Do not create fake social media accounts or fictional physical addresses.
+
+Keep contact information configurable until the official Crestiqtrades details are supplied.
+
+Once genuine details are provided, use them consistently across the appropriate pages and contact interfaces.
+
+The support interface must not claim to send messages successfully if the underlying submission mechanism is not connected.
+
+Provide meaningful validation, success, error, and loading states where forms are implemented.
+
+⸻
+
+15. TECHNICAL ARCHITECTURE
+
+Use the existing environment’s supported application framework and build system.
+
+Before making changes, identify the actual project structure and the dependencies already present.
+
+Do not assume a particular framework version without checking the existing environment.
+
+Do not replace a working application with an unrelated project structure simply because a different framework is familiar.
+
+If this is a genuinely new project with no existing application, establish a clean, maintainable structure appropriate to the available Google AI Studio environment.
+
+Code organisation
+
+Separate concerns appropriately.
+
+Keep reusable components, page layouts, design tokens, routing, utilities, and integration logic organised.
+
+Avoid placing the entire application into one enormous component.
+
+Avoid duplicating the same header, footer, consent logic, or navigation across many files when shared components are appropriate.
+
+Use descriptive filenames and component names.
+
+Keep route definitions centralised where suitable.
+
+Use reusable form controls and consistent validation.
+
+Routing
+
+Define the intended public routes for the landing page, About, legal information, support, and other implemented public pages.
+
+Reserve and preserve the exact /admin entry route.
+
+Ensure that direct navigation to implemented routes works correctly.
+
+Do not allow the /admin route to be accidentally consumed by a generic catch-all route before its intended custom 404 interaction can run.
+
+Configure the hosting environment appropriately so that valid application routes can load directly.
+
+Do not expose the administrator dashboard merely because a user knows an internal route.
+
+Error handling
+
+Implement appropriate error states.
+
+A failed request must not silently appear successful.
+
+An unavailable integration must not display fabricated data.
+
+Avoid blank screens caused by unhandled exceptions.
+
+Use appropriate loading states without leaving the application permanently stuck on a loading screen.
+
+Dependencies
+
+Use suitable, maintained dependencies where necessary.
+
+Do not install large libraries merely to create a simple animation or button.
+
+Avoid unnecessary dependencies that increase the maintenance burden.
+
+Do not introduce incompatible packages or overwrite working configuration without a reason.
+
+⸻
+
+16. RESPONSIVE DESIGN
+
+The website must be designed for mobile, tablet, laptop, and desktop use.
+
+Do not treat responsiveness as an afterthought.
+
+Mobile
+
+At narrow viewport widths:
+
+* The logo must remain legible.
+* Navigation must be usable.
+* Buttons must fit without clipping.
+* Text must wrap naturally.
+* The hero must retain a strong visual hierarchy.
+* Images must scale correctly.
+* Content must not overflow horizontally.
+* Footer columns must stack sensibly.
+* Consent controls must remain visible and usable.
+* Forms must be easy to complete.
+* Touch targets must be appropriately sized.
+* Fixed elements must not cover important content.
+* Headings must not become excessively large.
+* The page must not require horizontal scrolling.
+
+Desktop
+
+At larger viewport widths:
+
+* Content must use an appropriate maximum width.
+* Text must not stretch across excessively wide lines.
+* Hero compositions must use space deliberately.
+* Navigation must be balanced.
+* Section layouts must remain visually coherent.
+* Images must not become pixelated or distorted.
+* Footer content must be properly aligned.
+
+Use responsive layout techniques rather than designing exclusively for a single device size.
+
+Test intermediate widths as well as the smallest and largest supported viewports.
+
+⸻
+
+17. ACCESSIBILITY AND INTERACTION QUALITY
+
+The website must be usable by visitors with different access needs.
+
+Implement:
+
+* Semantic HTML.
+* Appropriate heading hierarchy.
+* Accessible form labels.
+* Keyboard-operable navigation.
+* Visible focus indicators.
+* Suitable text contrast.
+* Descriptive link text.
+* Appropriate alternative text for meaningful images.
+* Accessible names for icon-only controls.
+* Proper dialog and disclosure behaviour.
+* Accessible error messages.
+* Reduced-motion support where appropriate.
+
+Do not use colour alone to communicate success, failure, or trading status.
+
+Do not create buttons that are actually noninteractive decorative elements.
+
+Do not use a clickable div where a semantic button is appropriate.
+
+Every interactive element must have a meaningful purpose.
+
+Hover effects must not be the only way to reveal essential information.
+
+Animations should be restrained, smooth, and purposeful.
+
+Avoid excessive motion, long introductory animations, and effects that delay access to the actual content.
+
+⸻
+
+18. PERFORMANCE AND ASSET QUALITY
+
+The website should load quickly and remain responsive.
+
+Use appropriate image dimensions and modern image formats where supported.
+
+Avoid loading unnecessarily large images.
+
+Use local assets for the brand logo and favicon.
+
+Do not hotlink a competitor’s logo or depend on an unreliable external image URL for essential branding.
+
+Use appropriate font-loading strategies.
+
+Avoid excessive JavaScript for decorative effects.
+
+Avoid unnecessary re-rendering and duplicated requests.
+
+Provide sensible loading behaviour for images and asynchronous features.
+
+Ensure that the website remains usable if an optional external visual resource fails to load.
+
+Do not use low-quality placeholder graphics as permanent brand assets.
+
+The completed page should feel polished without sacrificing performance.
+
+⸻
+
+19. BRAND CONTENT AND COPYWRITING
+
+Write original website copy for Crestiqtrades.
+
+Do not copy the text from Binance, GOAT Funded Trader, or any other reference website.
+
+Avoid generic filler.
+
+Avoid repeated statements that make different sections sound identical.
+
+Avoid unsupported superlatives.
+
+Use concise, confident, professional language appropriate for a trading platform.
+
+Explain AI trading in understandable terms.
+
+Explain copy trading without implying guaranteed results.
+
+Explain the platform’s capabilities without overstating what has been implemented.
+
+Use consistent terminology across the landing page, About page, navigation, footer, and future application.
+
+The brand should sound established and professional without pretending to have credentials or accomplishments that have not been verified.
+
+Do not insert invented customer reviews, account balances, trade histories, or platform statistics into marketing content.
+
+⸻
+
+20. CONFIGURATION AND INFORMATION THAT MUST NOT BE INVENTED
+
+The following information is not yet available and must not be fabricated:
+
+* Production domain.
+* Official Crestiqtrades email address.
+* Physical business address.
+* Company registration number.
+* Regulatory licence or authorisation.
+* Official social media accounts.
+* Firebase project configuration.
+* Live market-data provider.
+* Actual customer statistics.
+* Verified testimonials.
+* Historical trading performance.
+* Actual wallet integrations.
+* Live deposit or withdrawal integrations.
+* Production authentication configuration.
+
+Keep the appropriate settings configurable.
+
+Do not display raw placeholders such as “YOUR_EMAIL_HERE” or “INSERT_DOMAIN” to ordinary visitors.
+
+Where a required detail is missing, omit the public-facing value until it can be supplied, or identify it clearly as a configuration requirement in the development context.
+
+The company establishment year provided for the project is 2022. Use it as supplied without inventing further corporate history.
+
+Do not claim that the application is production-ready for financial transactions before the relevant backend, security, legal, and operational requirements have been implemented and tested.
+
+⸻
+
+21. WHAT MUST BE IMPLEMENTED IN THIS FIRST STAGE
+
+The first stage focuses on the public website and the foundation of the complete project.
+
+Implement the following now:
+
+1. Establish the Crestiqtrades design system.
+2. Create the original Crestiqtrades logo.
+3. Create the required logo variants.
+4. Create and connect the browser favicon.
+5. Build the complete responsive landing page.
+6. Implement the public navigation.
+7. Create the appropriate About page.
+8. Create the Privacy Policy page.
+9. Create the Terms and Conditions page.
+10. Create the Risk Disclosure page.
+11. Create the Cookie Policy page.
+12. Implement the custom cookie-consent interface.
+13. Implement persistent consent preferences.
+14. Implement the appropriate SEO metadata.
+15. Configure the appropriate favicon and document metadata.
+16. Establish the intended application routes.
+17. Preserve the /admin entry route and its custom 404-style interaction.
+18. Establish the appropriate administrator-authentication integration boundary without exposing the password in public code.
+19. Preserve the planned customer application routes and feature requirements.
+20. Prepare the project for the later Firebase configuration.
+21. Ensure all implemented links and controls work.
+22. Test responsive behaviour and core interactions.
+23. Remove unnecessary placeholders and unfinished sections from the public experience.
+
+Do not interpret this list as permission to discard the remaining project requirements.
+
+The customer application and administrator dashboard remain part of the complete project. Implement the infrastructure that can genuinely be completed in this stage, and clearly distinguish it from features that require the forthcoming Firebase configuration or other external integrations.
+
+Do not fabricate backend functionality to make the project appear finished.
+
+⸻
+
+22. IMPLEMENTATION AND VALIDATION
+
+Do not stop after producing a visual mockup.
+
+Implement the actual application in the available environment.
+
+If the project already exists, preserve its useful configuration and avoid destructive rewrites.
+
+If this is a new project, establish a clean and maintainable foundation.
+
+After implementation, verify the following.
+
+Visual checks
+
+* The landing page has a coherent, distinctive visual identity.
+* No glassmorphism has been introduced.
+* The logo is an actual asset.
+* The favicon exists and is referenced correctly.
+* The page does not resemble a generic AI dashboard template.
+* The layout is not cluttered.
+* Typography and spacing are consistent.
+* The hero section is visually compelling.
+* The page sections flow naturally.
+* The footer is properly organised.
+* The cookie panel looks polished and readable.
+* Mobile and desktop layouts both look intentional.
+
+Functional checks
+
+* Navigation links lead to the correct pages.
+* Internal routes load correctly.
+* The logo links to the homepage.
+* Cookie preferences can be customised and saved.
+* Accept All works.
+* Reject All works.
+* Saved consent choices persist.
+* Cookie preferences can be reopened.
+* No optional consent-dependent scripts run prematurely.
+* Forms display appropriate validation and feedback.
+* No visible button is knowingly left without its intended action.
+* No nonexistent route is linked as though it were complete.
+* The /admin entry page displays the intended custom 404 experience.
+* Nine deliberate taps reveal the concealed password interface.
+* Revealing the password interface does not automatically authenticate the administrator.
+* The password is not exposed in public frontend code.
+* Protected admin functionality is not accessible without proper authorization.
+
+Technical checks
+
+* No obvious compilation errors.
+* No missing essential assets.
+* No broken internal links.
+* No persistent loading states caused by failed requests.
+* No unintended horizontal scrolling.
+* No unnecessary console errors.
+* No accidental noindex configuration affecting the public website.
+* No fabricated live market information.
+* No fake account balances.
+* No invented customer statistics.
+* No placeholder branding left in the finished public interface.
+
+Fix problems found during validation rather than simply reporting them.
+
+⸻
+
+23. FINAL DESIGN STANDARD
+
+The final landing page must feel like a carefully designed, premium financial technology product.
+
+It must not feel like a default template with the brand name changed.
+
+It must not feel like an unfinished prototype.
+
+It must not feel like a dashboard disguised as a landing page.
+
+It must not rely on glassmorphism, glowing effects, random gradients, or excessive decoration to create visual interest.
+
+The quality must come from the composition, typography, original branding, spacing, imagery, content hierarchy, and consistency of the design.
+
+The logo must be distinctive.
+
+The favicon must exist.
+
+The navigation must be clear.
+
+The copy must be credible.
+
+The cookie interface must function.
+
+The legal pages must be present.
+
+The SEO foundations must be correct.
+
+The application architecture must preserve the customer and administrative features already specified.
+
+Every implemented interaction must have a meaningful result.
+
+The public website must not expose administrative controls.
+
+The admin route must preserve the specified custom 404 and nine-tap entry experience, while actual access remains protected by secure authentication and authorization.
+
+The application must be structured to accommodate the Firebase configuration that will be supplied later.
+
+Do not sacrifice these requirements to finish quickly.
+
+Do not remove a requirement silently because it is inconvenient.
+
+Do not redesign the product into something different from the specified Crestiqtrades identity.
+
+The priority is to produce an exceptional landing page while establishing the correct foundation for the complete Crestiqtrades platform.
+
+Begin by reviewing the supplied visual references, establishing the design system and original brand assets, and then implementing the landing page and the foundational requirements described above.

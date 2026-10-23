@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="crestiq-grad-1" x1="6" y1="42" x2="38" y2="6" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E40AF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="crestiq-grad-2" x1="12" y1="36" x2="42" y2="6" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shield/Pillar (Solid, no blur) -->
+  <rect width="48" height="48" rx="10" fill="#0B0F19" />
+  
+  <!-- Outer Geometric Crest Frame -->
+  <path d="M24 6L39 15V33L24 42L9 33V15L24 6Z" stroke="#1E293B" stroke-width="1.5" stroke-linejoin="round" />
+  
+  <!-- Ascending Crest Geometric Facets -->
+  <!-- Left ascending facet -->
+  <path d="M14 29L24 12V34L14 29Z" fill="url(#crestiq-grad-1)" />
+  <!-- Right ascending facet -->
+  <path d="M34 29L24 12V34L34 29Z" fill="url(#crestiq-grad-2)" />
+  <!-- Top Crest Nexus Cap -->
+  <path d="M24 12L29 19H19L24 12Z" fill="#38BDF8" />
+  <!-- Core Precision Needle -->
+  <path d="M24 12V37" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" />
+  <circle cx="24" cy="12" r="2" fill="#FFFFFF" />
+</svg>

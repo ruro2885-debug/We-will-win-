@@ -1,0 +1,17 @@
+# robots.txt for Crestiqtrades
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /markets
+Allow: /ai-trading
+Allow: /copy-trading
+Allow: /support
+Allow: /privacy
+Allow: /terms
+Allow: /risk-disclosure
+Allow: /cookies
+
+# Disallow administrative entry point from search crawl
+Disallow: /admin
+
+Sitemap: /sitemap.xml

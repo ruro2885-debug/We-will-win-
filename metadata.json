@@ -1,0 +1,6 @@
+{
+  "name": "Crestiqtrades",
+  "description": "AI-powered trading platform with algorithmic market intelligence, copy trading, and multi-asset portfolio analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
